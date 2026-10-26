@@ -153,7 +153,7 @@ Every theme has a standard `luci.mk` Makefile. Drop the folder into your `feeds/
 
 ## Customise
 
-Each stylesheet ends with a clearly marked override block after the stock Bootstrap rules. Most colours come from a handful of CSS variables at the top of that block (for example `--t-accent`, `--t-bg`, `--t-card`), so re-colouring a theme is usually a few edits.
+Each stylesheet ends with a clearly marked override block after the stock Bootstrap rules. The colours are CSS variables at the top of that block (the newer themes use `--t-accent`, `--t-bg`, `--t-card` and friends), so re-colouring a theme is usually a few edits.
 
 ## Regenerate the screenshots
 
