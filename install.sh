@@ -1,7 +1,7 @@
 #!/bin/sh
 # Install a theme from GitHub straight onto an OpenWrt router.
 #
-#   sh install.sh <theme>            theme = obsidian | glass | mission
+#   sh install.sh <theme>            theme = obsidian | glass | mission | blueprint
 #
 # Public repo:
 #   wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s mission
@@ -12,7 +12,7 @@
 set -e
 THEME="${1:-}"
 REPO="vistrocity/openwrt-luci-themes"
-case "$THEME" in obsidian|glass|mission) ;; *) echo "usage: sh install.sh obsidian|glass|mission"; exit 1;; esac
+case "$THEME" in obsidian|glass|mission|blueprint) ;; *) echo "usage: sh install.sh obsidian|glass|mission|blueprint|blueprint"; exit 1;; esac
 
 TMP=/tmp/owt-install.$$
 mkdir -p "$TMP" && cd "$TMP"

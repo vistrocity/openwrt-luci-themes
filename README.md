@@ -7,6 +7,7 @@ Custom LuCI themes for OpenWrt (tested target: OpenWrt 25.12, `mediatek/filogic`
 | Obsidian | Dark slate + teal accent, rounded cards | [`luci-theme-obsidian`](luci-theme-obsidian) |
 | Glass | Glassmorphism: frosted translucent cards on a violet/cyan gradient | [`luci-theme-glass`](luci-theme-glass) |
 | Mission | Mission Control sci-fi HUD: amber/cyan, corner brackets, segmented meters, live clock | [`luci-theme-mission`](luci-theme-mission) |
+| Blueprint | Technical drawing: white linework on blueprint blue, drafting grid, hatched meters, FIG. numbering | [`luci-theme-blueprint`](luci-theme-blueprint) |
 
 Each theme folder is a self-contained LuCI package source tree with its own README
 and a `install.sh` for dropping it onto a running router.
@@ -20,4 +21,4 @@ Apache-2.0. The themes are derived from `luci-theme-bootstrap` from the
     wget -qO- --header="Authorization: Bearer $GITHUB_TOKEN" \
       https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s mission
 
-If the repo is public, drop the token and the `--header` line. Replace `mission` with `glass` or `obsidian`.
+If the repo is public, drop the token and the `--header` line. Replace `mission` with `glass`, `obsidian` or `blueprint`.
