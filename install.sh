@@ -12,7 +12,7 @@
 set -e
 THEME="${1:-}"
 REPO="vistrocity/openwrt-luci-themes"
-case "$THEME" in obsidian|glass|mission|blueprint) ;; *) echo "usage: sh install.sh obsidian|glass|mission|blueprint|blueprint"; exit 1;; esac
+case "$THEME" in obsidian|glass|mission|blueprint) ;; *) echo "usage: sh install.sh obsidian|glass|mission|blueprint"; exit 1;; esac
 
 TMP=/tmp/owt-install.$$
 mkdir -p "$TMP" && cd "$TMP"
