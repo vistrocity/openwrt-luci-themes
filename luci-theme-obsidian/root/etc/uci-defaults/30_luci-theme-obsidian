@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Register the theme so it shows up under System > System > Language and Style.
+# It is NOT made the default automatically on upgrade; pick it in the UI
+# (or run: uci set luci.main.mediaurlbase=/luci-static/obsidian && uci commit luci).
+
+if ! uci -q get luci.themes.Obsidian >/dev/null 2>&1; then
+	uci set luci.themes.Obsidian=/luci-static/obsidian
+	uci commit luci
+fi
+
+exit 0
