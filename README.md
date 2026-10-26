@@ -16,9 +16,9 @@ Custom LuCI themes for OpenWrt (tested target: OpenWrt 25.12, `mediatek/filogic`
 | Rack | Dark: server-rack faceplates, mounting ears, 1U/2U labels, status LEDs | [`luci-theme-rack`](luci-theme-rack) |
 | Circadian | Palette follows local time: dawn, day, dusk, night (stars) | [`luci-theme-circadian`](luci-theme-circadian) |
 | Teletext | Dark: 80s TV text, eight colours, block bars | [`luci-theme-teletext`](luci-theme-teletext) |
-| 8-bit | Dark: pixel-RPG menus, notched borders, health-bar meters | [`luci-theme-pixel`](luci-theme-pixel) |
+| Pixel (8-bit) | Dark: pixel-RPG menus, notched borders, health-bar meters | [`luci-theme-pixel`](luci-theme-pixel) |
 | Aquarium | Dark: deep-sea gradient, glass panels, rising bubbles | [`luci-theme-aquarium`](luci-theme-aquarium) |
-| Sumi-e | Light: washi paper, brush-stroke rules, red seal | [`luci-theme-sumie`](luci-theme-sumie) |
+| Sumie (sumi-e) | Light: washi paper, brush-stroke rules, red seal | [`luci-theme-sumie`](luci-theme-sumie) |
 | Topo | Light: sepia sea-chart, contour rings, compass rose | [`luci-theme-topo`](luci-theme-topo) |
 
 Each theme folder is a self-contained LuCI package source tree with its own README

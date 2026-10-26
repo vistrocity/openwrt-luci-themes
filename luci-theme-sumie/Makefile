@@ -13,7 +13,7 @@ PKG_LICENSE:=Apache-2.0
 define Package/luci-theme-sumie/postrm
 #!/bin/sh
 [ -n "$${IPKG_INSTROOT}" ] || {
-	uci -q delete luci.themes.Sumi-e
+	uci -q delete luci.themes.Sumie
 	uci commit luci
 }
 endef

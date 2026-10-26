@@ -10,8 +10,8 @@ mkdir -p /www/luci-static/resources/view/pixel
 cp "$D/htdocs/luci-static/resources/view/pixel/sysauth.js" /www/luci-static/resources/view/pixel/
 mkdir -p /usr/share/ucode/luci/template/themes
 cp -r "$D/ucode/template/themes/pixel" /usr/share/ucode/luci/template/themes/
-uci set luci.themes.8-bit=/luci-static/pixel
+uci set luci.themes.Pixel=/luci-static/pixel
 uci set luci.main.mediaurlbase=/luci-static/pixel
 uci commit luci
 rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache 2>/dev/null || true
-echo "8-bit installed. Hard-refresh the browser (Ctrl+Shift+R)."
+echo "Pixel installed. Hard-refresh the browser (Ctrl+Shift+R)."

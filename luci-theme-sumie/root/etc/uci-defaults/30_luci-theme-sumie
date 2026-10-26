@@ -4,8 +4,8 @@
 # It is NOT made the default automatically on upgrade; pick it in the UI
 # (or run: uci set luci.main.mediaurlbase=/luci-static/sumie && uci commit luci).
 
-if ! uci -q get luci.themes.Sumi-e >/dev/null 2>&1; then
-	uci set luci.themes.Sumi-e=/luci-static/sumie
+if ! uci -q get luci.themes.Sumie >/dev/null 2>&1; then
+	uci set luci.themes.Sumie=/luci-static/sumie
 	uci commit luci
 fi
 

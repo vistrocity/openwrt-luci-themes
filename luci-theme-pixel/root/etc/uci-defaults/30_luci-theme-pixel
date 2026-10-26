@@ -4,8 +4,8 @@
 # It is NOT made the default automatically on upgrade; pick it in the UI
 # (or run: uci set luci.main.mediaurlbase=/luci-static/pixel && uci commit luci).
 
-if ! uci -q get luci.themes.8-bit >/dev/null 2>&1; then
-	uci set luci.themes.8-bit=/luci-static/pixel
+if ! uci -q get luci.themes.Pixel >/dev/null 2>&1; then
+	uci set luci.themes.Pixel=/luci-static/pixel
 	uci commit luci
 fi
 

@@ -10,8 +10,8 @@ mkdir -p /www/luci-static/resources/view/sumie
 cp "$D/htdocs/luci-static/resources/view/sumie/sysauth.js" /www/luci-static/resources/view/sumie/
 mkdir -p /usr/share/ucode/luci/template/themes
 cp -r "$D/ucode/template/themes/sumie" /usr/share/ucode/luci/template/themes/
-uci set luci.themes.Sumi-e=/luci-static/sumie
+uci set luci.themes.Sumie=/luci-static/sumie
 uci set luci.main.mediaurlbase=/luci-static/sumie
 uci commit luci
 rm -rf /tmp/luci-indexcache* /tmp/luci-modulecache 2>/dev/null || true
-echo "Sumi-e installed. Hard-refresh the browser (Ctrl+Shift+R)."
+echo "Sumie installed. Hard-refresh the browser (Ctrl+Shift+R)."

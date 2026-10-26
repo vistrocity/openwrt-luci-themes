@@ -3126,3 +3126,15 @@ h3, .cbi-section > h3 { text-shadow: 0 0 10px rgba(62, 230, 209, .35); }
 @media (prefers-reduced-motion: reduce) {
 	* { transition: none !important; animation: none !important; }
 }
+
+/* Opaque menus: translucent panels made the text hard to read over the page */
+.nav .dropdown-menu,
+.cbi-dropdown[open] > ul.dropdown {
+	background: #06303f;
+	backdrop-filter: none;
+	-webkit-backdrop-filter: none;
+	border: 1px solid rgba(62, 230, 209, .45);
+	box-shadow: 0 12px 32px rgba(0, 0, 0, .6), 0 0 18px rgba(62, 230, 209, .12);
+}
+.nav .dropdown-menu li a { color: #e6fdff; }
+.nav .dropdown-menu li a:hover { background: #0b4a5e; color: #3ee6d1; }

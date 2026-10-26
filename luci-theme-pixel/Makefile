@@ -13,7 +13,7 @@ PKG_LICENSE:=Apache-2.0
 define Package/luci-theme-pixel/postrm
 #!/bin/sh
 [ -n "$${IPKG_INSTROOT}" ] || {
-	uci -q delete luci.themes.8-bit
+	uci -q delete luci.themes.Pixel
 	uci commit luci
 }
 endef
