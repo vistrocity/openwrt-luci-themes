@@ -14,3 +14,10 @@ and a `install.sh` for dropping it onto a running router.
 ## Licence
 Apache-2.0. The themes are derived from `luci-theme-bootstrap` from the
 [OpenWrt LuCI project](https://github.com/openwrt/luci).
+
+## Install straight from GitHub (on the router)
+    export GITHUB_TOKEN=github_pat_xxx   # only needed while the repo is private (read-only, Contents: read)
+    wget -qO- --header="Authorization: Bearer $GITHUB_TOKEN" \
+      https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s mission
+
+If the repo is public, drop the token and the `--header` line. Replace `mission` with `glass` or `obsidian`.
