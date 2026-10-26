@@ -2863,10 +2863,12 @@ input:focus, textarea:focus, select:focus,
 	box-shadow: 0 0 0 3px rgba(var(--focus-color-rgb), .2), 0 0 18px rgba(var(--focus-color-rgb), .25) !important;
 }
 
-.cbi-dropdown > ul, .cbi-dropdown[open] > ul {
+.cbi-dropdown[open] > ul.dropdown {
 	background: var(--glass-menu);
 	border: 1px solid var(--glass-border);
 	border-radius: 10px;
+	-webkit-backdrop-filter: var(--glass-blur);
+	backdrop-filter: var(--glass-blur);
 }
 
 /* --- Buttons ------------------------------------------------------------- */
@@ -2905,14 +2907,13 @@ input:focus, textarea:focus, select:focus,
 	background: linear-gradient(135deg, #b4e3ff, #bda8ff);
 }
 
-/* Save: solid mint when alone, glass with accent text when next to Apply */
-.cbi-page-actions .cbi-button-save {
-	--on-color: #04231a;
-	background: linear-gradient(135deg, var(--success-color-high), var(--success-color-medium));
-	border-color: rgba(255, 255, 255, .35);
-	font-weight: 600;
-}
-
+/* Save / Add / "positive" buttons: frosted glass with accent text and outline
+   (the base theme makes these green; Glass keeps one accent colour) */
+.cbi-button-positive,
+.cbi-button-fieldadd,
+.cbi-button-add,
+.cbi-button-save,
+.cbi-page-actions .cbi-button-save,
 .cbi-page-actions .cbi-button-apply + .cbi-button-save,
 .cbi-page-actions .cbi-button-negative + .cbi-button-save {
 	--on-color: var(--primary-color-high);
@@ -2921,7 +2922,20 @@ input:focus, textarea:focus, select:focus,
 	font-weight: 600;
 }
 
-.cbi-page-actions .cbi-button-apply + .cbi-button-save:hover { background: rgba(var(--glass-glow), .18); }
+.cbi-button-positive:hover,
+.cbi-button-fieldadd:hover,
+.cbi-button-add:hover,
+.cbi-button-save:hover,
+.cbi-page-actions .cbi-button-save:hover {
+	background: rgba(var(--glass-glow), .18);
+}
+
+.cbi-button-positive.important,
+.cbi-page-actions .cbi-button-positive.important {
+	--on-color: var(--on-primary-color);
+	background: linear-gradient(135deg, var(--primary-color-high), var(--primary-color-low));
+	border-color: rgba(255, 255, 255, .35);
+}
 
 .cbi-button-negative,
 .cbi-button-remove,
