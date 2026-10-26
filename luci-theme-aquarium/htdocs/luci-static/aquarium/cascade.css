@@ -3127,12 +3127,12 @@ h3, .cbi-section > h3 { text-shadow: 0 0 10px rgba(62, 230, 209, .35); }
 	* { transition: none !important; animation: none !important; }
 }
 
-/* Menus: 40% transparent glass; blur keeps the text readable over the page */
+/* Menus: 40% transparent glass; light 2px blur so the page shows through but text stays readable */
 .nav .dropdown-menu,
 .cbi-dropdown[open] > ul.dropdown {
 	background: rgba(4, 38, 51, .6);
-	backdrop-filter: blur(14px);
-	-webkit-backdrop-filter: blur(14px);
+	backdrop-filter: blur(2px);
+	-webkit-backdrop-filter: blur(2px);
 	border: 1px solid rgba(62, 230, 209, .4);
 	box-shadow: 0 12px 32px rgba(0, 0, 0, .5), 0 0 18px rgba(62, 230, 209, .12);
 }
