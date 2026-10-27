@@ -13,6 +13,7 @@ ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
 TPL = os.path.join(ROOT, 'tools', 'template')
 TSV = os.path.join(ROOT, 'tools', 'themes.tsv')
 THEMES = os.path.join(ROOT, 'themes')
+SHOW_ALL = 8  # rows of the README theme table shown before the 'Show older themes' fold
 WORDS = 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split()
 TENS = {20: 'twenty', 30: 'thirty', 40: 'forty', 50: 'fifty'}
 
@@ -167,11 +168,14 @@ def sync():
                     '<b>%s</b><br><sub>%s</sub><br><sub><code>sh -s %s</code></sub>\n</td>\n' % (r[0], r[0], r[1], r[1], r[2], r[0]) for r in latest)
     s, n = re.subn(r'<!-- GALLERY:START -->.*?<!-- GALLERY:END -->', lambda m: '<!-- GALLERY:START -->\n<table>\n<tr>\n' + cells + '</tr>\n</table>\n<sub>Released %s.</sub>\n<!-- GALLERY:END -->' % newest, s, flags=re.S); assert n == 1
     ordered = sorted(rows, key=lambda r: r[4], reverse=True)  # stable: newest batch first, tsv order inside a batch
-    lines = ['| Theme | Mode | Look | Install name | Preview |', '|---|---|---|---|---|']
-    for slug, disp, mode, desc, batch in ordered:
-        lines.append('| [%s](themes/luci-theme-%s) | %s | %s | `%s` | [overview](docs/screenshots/%s-overview.jpg) &middot; [settings](docs/screenshots/%s-settings.jpg) |'
-                     % (disp, slug, mode, desc, slug, slug, slug))
-    s, n = re.subn(r'<!-- LIST:START -->.*?<!-- LIST:END -->', lambda m: '<!-- LIST:START -->\n' + '\n'.join(lines) + '\n<!-- LIST:END -->', s, flags=re.S); assert n == 1
+    head = ['| Theme | Mode | Look | Install name | Preview |', '|---|---|---|---|---|']
+    row = lambda r: ('| [%s](themes/luci-theme-%s) | %s | %s | `%s` | [overview](docs/screenshots/%s-overview.jpg) &middot; [settings](docs/screenshots/%s-settings.jpg) |'
+                     % (r[1], r[0], r[2], r[3], r[0], r[0], r[0]))
+    shown, rest = ordered[:SHOW_ALL], ordered[SHOW_ALL:]
+    body = '\n'.join(head + [row(r) for r in shown])
+    if rest:  # older themes sit in a collapsed section so the README does not keep growing
+        body += '\n\n<details>\n<summary><b>Show older themes</b></summary>\n\n' + '\n'.join(head + [row(r) for r in rest]) + '\n\n</details>'
+    s, n = re.subn(r'<!-- LIST:START -->.*?<!-- LIST:END -->', lambda m: '<!-- LIST:START -->\n' + body + '\n<!-- LIST:END -->', s, flags=re.S); assert n == 1
     names = ', '.join('`%s`' % x for x in slugs)
     s, n = re.subn(r'<!-- NAMES:START -->.*?<!-- NAMES:END -->', lambda m: '<!-- NAMES:START -->' + names + '<!-- NAMES:END -->', s, flags=re.S); assert n == 1
     open(p, 'w', encoding='utf-8').write(s)

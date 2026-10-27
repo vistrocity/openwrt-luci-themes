@@ -64,6 +64,12 @@ A new batch ships every Friday.
 | [Glass](themes/luci-theme-glass) | Dark | Glassmorphism: frosted cards over a violet and cyan gradient. | `glass` | [overview](docs/screenshots/glass-overview.jpg) &middot; [settings](docs/screenshots/glass-settings.jpg) |
 | [Mission Control](themes/luci-theme-mission) | Dark | Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock. | `mission` | [overview](docs/screenshots/mission-overview.jpg) &middot; [settings](docs/screenshots/mission-settings.jpg) |
 | [Terminal](themes/luci-theme-terminal) | Dark | Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons. | `terminal` | [overview](docs/screenshots/terminal-overview.jpg) &middot; [settings](docs/screenshots/terminal-settings.jpg) |
+
+<details>
+<summary><b>Show older themes</b></summary>
+
+| Theme | Mode | Look | Install name | Preview |
+|---|---|---|---|---|
 | [Synthwave](themes/luci-theme-synthwave) | Dark | Neon outrun: striped sun, perspective grid floor, glowing panels. | `synthwave` | [overview](docs/screenshots/synthwave-overview.jpg) &middot; [settings](docs/screenshots/synthwave-settings.jpg) |
 | [8-bit](themes/luci-theme-pixel) | Dark | Pixel-RPG game menus with notched borders and health-bar meters. | `pixel` | [overview](docs/screenshots/pixel-overview.jpg) &middot; [settings](docs/screenshots/pixel-settings.jpg) |
 | [Circadian](themes/luci-theme-circadian) | Auto | Changes palette with the local time: dawn, day, dusk, night. | `circadian` | [overview](docs/screenshots/circadian-overview.jpg) &middot; [settings](docs/screenshots/circadian-settings.jpg) |
@@ -72,6 +78,8 @@ A new batch ships every Friday.
 | [Retro](themes/luci-theme-retro) | Light | 90s desktop: bevelled windows, navy title bars, blue-block meters. | `retro` | [overview](docs/screenshots/retro-overview.jpg) &middot; [settings](docs/screenshots/retro-settings.jpg) |
 | [Sumi-e](themes/luci-theme-sumie) | Light | Washi paper, brush-stroke rules, a red seal, lots of whitespace. | `sumie` | [overview](docs/screenshots/sumie-overview.jpg) &middot; [settings](docs/screenshots/sumie-settings.jpg) |
 | [Topo](themes/luci-theme-topo) | Light | Sepia sea-chart with contour rings and a compass rose. | `topo` | [overview](docs/screenshots/topo-overview.jpg) &middot; [settings](docs/screenshots/topo-settings.jpg) |
+
+</details>
 <!-- LIST:END -->
 
 ### Circadian through the day
