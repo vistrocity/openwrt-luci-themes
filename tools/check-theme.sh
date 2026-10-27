@@ -12,7 +12,7 @@ for a in "$@"; do [ "$a" = "--qa" ] && QA=1 || THEMES="$THEMES $a"; done
 FAIL=0
 bad() { echo "  FAIL $1"; FAIL=1; }
 for t in $THEMES; do
-	d="$ROOT/luci-theme-$t"; echo "== $t"
+	d="$ROOT/themes/luci-theme-$t"; echo "== $t"
 	[ -d "$d" ] || { bad "missing folder"; continue; }
 	st="$d/htdocs/luci-static/$t"
 	for f in Makefile README.md install.sh "root/etc/uci-defaults/30_luci-theme-$t" "htdocs/luci-static/$t/cascade.css" "htdocs/luci-static/$t/mobile.css" \

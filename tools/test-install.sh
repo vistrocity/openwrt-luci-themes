@@ -32,7 +32,7 @@ for t in "$@"; do
 	grep -q "set luci.main.mediaurlbase=/luci-static/$t" "$UCI_LOG" || { echo "  FAIL mediaurlbase not set"; RC=1; }
 	grep -qE "set luci.themes.[A-Za-z0-9]+=/luci-static/$t" "$UCI_LOG" || { echo "  FAIL theme not registered"; RC=1; }
 	grep -q "commit luci" "$UCI_LOG" || { echo "  FAIL uci commit missing"; RC=1; }
-	cmp -s "$ROOT/luci-theme-$t/htdocs/luci-static/$t/cascade.css" "/www/luci-static/$t/cascade.css" || { echo "  FAIL installed css differs from repo"; RC=1; }
+	cmp -s "$ROOT/themes/luci-theme-$t/htdocs/luci-static/$t/cascade.css" "/www/luci-static/$t/cascade.css" || { echo "  FAIL installed css differs from repo"; RC=1; }
 done
 echo "-- bad theme name must be refused:"; sh "$ROOT/install.sh" nope >/dev/null 2>&1 && { echo "  FAIL accepted unknown theme"; RC=1; } || echo "  ok"
 [ $RC = 0 ] && echo "INSTALL TEST OK" || { echo "INSTALL TEST FAILED"; exit 1; }

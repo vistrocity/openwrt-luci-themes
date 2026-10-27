@@ -49,7 +49,7 @@ const nav = (active) => ['Status', 'System', 'Services', 'Network'].map(n =>
 
 // Collect what a theme's own header/footer templates contribute (dark flag, clock element, clock script).
 function themeInfo(t) {
-  const dir = path.join(ROOT, 'luci-theme-' + t);
+  const dir = path.join(ROOT, 'themes', 'luci-theme-' + t);
   const hdr = fs.readFileSync(`${dir}/ucode/template/themes/${t}/header.ut`, 'utf8');
   const ftr = fs.readFileSync(`${dir}/ucode/template/themes/${t}/footer.ut`, 'utf8');
   return {

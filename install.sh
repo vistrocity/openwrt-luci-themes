@@ -2,7 +2,7 @@
 # Install a theme from GitHub straight onto an OpenWrt router.
 #
 #   sh install.sh <theme>
-#   themes: obsidian glass mission blueprint terminal synthwave rack teletext pixel aquarium circadian brutal paper retro sumie topo
+#   themes: rack blueprint teletext aquarium obsidian glass mission terminal synthwave pixel circadian brutal paper retro sumie topo
 #
 # Public repo:
 #   wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
@@ -11,7 +11,7 @@
 #   GITHUB_TOKEN=<token>    read-only token, needed only while the repo is private
 #   OWT_TARBALL=<file>      use a local repo tarball instead of downloading (offline installs, testing)
 set -e
-THEMES="obsidian glass mission blueprint terminal synthwave rack teletext pixel aquarium circadian brutal paper retro sumie topo"
+THEMES="rack blueprint teletext aquarium obsidian glass mission terminal synthwave pixel circadian brutal paper retro sumie topo"
 THEME="${1:-}"
 REPO="vistrocity/openwrt-luci-themes"
 REF="${REF:-main}"
@@ -34,6 +34,6 @@ else
 fi
 
 tar -xzf repo.tgz
-SRC="$(ls -d */luci-theme-$THEME 2>/dev/null | head -n1)"
+SRC="$(ls -d */themes/luci-theme-$THEME */luci-theme-$THEME 2>/dev/null | head -n1)"
 [ -n "$SRC" ] || { echo "luci-theme-$THEME not found in download"; exit 1; }
 sh "$SRC/install.sh"

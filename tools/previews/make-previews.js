@@ -9,7 +9,7 @@ const { ROOT, pageHtml } = require('./mock');
 
 const OUT = process.env.OUT_DIR || path.join(ROOT, 'docs', 'screenshots');
 fs.mkdirSync(OUT, { recursive: true });
-const themes = fs.readdirSync(ROOT).filter(d => d.startsWith('luci-theme-')).map(d => d.slice(11)).sort();
+const themes = fs.readdirSync(path.join(ROOT, 'themes')).filter(d => d.startsWith('luci-theme-')).map(d => d.slice(11)).sort();
 const only = process.argv.slice(2);
 
 (async () => {
