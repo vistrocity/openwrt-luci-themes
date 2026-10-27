@@ -167,6 +167,16 @@ node tools/previews/make-previews.js rack topo  # just these
 
 The themes are forks of [`luci-theme-bootstrap`](https://github.com/openwrt/luci/tree/master/themes/luci-theme-bootstrap), with the stock rules kept intact and a theme-specific layer added on top. They were developed against OpenWrt 25.12 on a MediaTek Filogic router (ucode templates). Older LuCI releases that still use Lua templates are not supported.
 
+## Third-party LuCI apps
+
+The themes are forks of luci-theme-bootstrap and keep its class names and CSS variables, so apps built from the standard LuCI pieces (sections, tables, buttons, tabs, dropdowns, progress bars) pick the theme up automatically.
+
+Apps that ship their own CSS with hard-coded colours, or draw custom widgets or canvases, can look out of place, mostly on the dark themes. If one does, open a ["Something looks wrong"](../../issues/new/choose) issue with the theme, the app and a screenshot (blank out anything private). Colours that belong to the app can usually be fixed with a short override in the app's CSS; problems in the theme itself get fixed here.
+
+## Theme requests
+
+New themes ship every Friday. Have a look you'd like on your router? Open a ["Theme request"](../../issues/new/choose) issue.
+
 ## Licence
 
 Apache-2.0, the same as the LuCI project they derive from. See [`LICENSE`](LICENSE).
