@@ -1,0 +1,31 @@
+name: Theme request
+description: Suggest a look for a future Friday theme
+title: "Theme idea: "
+labels: ["theme-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        New themes ship every Friday. Ideas that are a real redesign (layout, type, shapes, texture) work best;
+        a recolour of an existing theme usually isn't enough. No third-party brands, logos or characters, please.
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      placeholder: e.g. Cockpit
+    validations:
+      required: true
+  - type: textarea
+    id: look
+    attributes:
+      label: The look
+      description: Colours, fonts, shapes, textures, what the menu and meters should feel like. Links to reference images are welcome.
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Dark or light
+      options: [Dark, Light, Either, Changes with time of day]
+    validations:
+      required: true

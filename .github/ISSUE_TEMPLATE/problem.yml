@@ -1,0 +1,31 @@
+name: Something looks wrong
+description: A page, app or widget that is unreadable or broken in a theme
+title: "[theme] problem: "
+labels: ["bug"]
+body:
+  - type: input
+    id: theme
+    attributes:
+      label: Theme
+      placeholder: e.g. rack
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Page or app
+      description: The LuCI page, or the luci-app-* package, where it happens.
+    validations:
+      required: true
+  - type: textarea
+    id: what
+    attributes:
+      label: What looks wrong
+      description: A screenshot helps. Please blank out anything private (addresses, MACs, hostnames).
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: OpenWrt version and browser
+      placeholder: e.g. 25.12.6, Firefox 140
