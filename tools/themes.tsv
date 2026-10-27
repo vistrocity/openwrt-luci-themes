@@ -14,3 +14,7 @@ paper	Paper	Light	E-ink / printed page: book serif, hairline rules, one red acce
 retro	Retro	Light	90s desktop: bevelled windows, navy title bars, blue-block meters.	2026-10-30
 sumie	Sumi-e	Light	Washi paper, brush-stroke rules, a red seal, lots of whitespace.	2026-10-30
 topo	Topo	Light	Sepia sea-chart with contour rings and a compass rose.	2026-10-30
+handheld	Handheld	Light	Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink.	2026-11-06
+nixie	Nixie	Dark	Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock.	2026-11-06
+subway	Subway	Light	A transit map: the menu is a set of coloured lines with station dots, sections hang off a route line, meters end in a station.	2026-11-06
+chalkboard	Chalkboard	Dark	Matte slate with chalk lettering: hand-drawn wobbly boxes, chalk-stroke meters, a wooden rail and ledge.	2026-11-06
