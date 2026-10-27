@@ -21,100 +21,58 @@ On the router (SSH in as root):
 wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
 ```
 
-Swap `aquarium` for any theme name: `obsidian`, `glass`, `mission`, `blueprint`, `terminal`, `synthwave`, `rack`, `teletext`, `pixel`, `aquarium`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
+Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
 
-## Gallery
+## Latest drop
 
+<!-- GALLERY:START -->
 <table>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-obsidian"><img src="docs/screenshots/obsidian-overview.jpg" alt="Obsidian theme" width="100%"></a><br>
-<b>Obsidian</b> &middot; <sub>Dark</sub><br>
-<sub>Slate and teal, rounded cards. The calm all-rounder.</sub><br>
-<sub><code>sh -s obsidian</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-glass"><img src="docs/screenshots/glass-overview.jpg" alt="Glass theme" width="100%"></a><br>
-<b>Glass</b> &middot; <sub>Dark</sub><br>
-<sub>Glassmorphism: frosted cards over a violet and cyan gradient.</sub><br>
-<sub><code>sh -s glass</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-mission"><img src="docs/screenshots/mission-overview.jpg" alt="Mission Control theme" width="100%"></a><br>
-<b>Mission Control</b> &middot; <sub>Dark</sub><br>
-<sub>Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock.</sub><br>
-<sub><code>sh -s mission</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-blueprint"><img src="docs/screenshots/blueprint-overview.jpg" alt="Blueprint theme" width="100%"></a><br>
-<b>Blueprint</b> &middot; <sub>Dark</sub><br>
-<sub>White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering.</sub><br>
-<sub><code>sh -s blueprint</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-terminal"><img src="docs/screenshots/terminal-overview.jpg" alt="Terminal theme" width="100%"></a><br>
-<b>Terminal</b> &middot; <sub>Dark</sub><br>
-<sub>Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons.</sub><br>
-<sub><code>sh -s terminal</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-synthwave"><img src="docs/screenshots/synthwave-overview.jpg" alt="Synthwave theme" width="100%"></a><br>
-<b>Synthwave</b> &middot; <sub>Dark</sub><br>
-<sub>Neon outrun: striped sun, perspective grid floor, glowing panels.</sub><br>
-<sub><code>sh -s synthwave</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-rack"><img src="docs/screenshots/rack-overview.jpg" alt="Rack theme" width="100%"></a><br>
-<b>Rack</b> &middot; <sub>Dark</sub><br>
-<sub>Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs.</sub><br>
-<sub><code>sh -s rack</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-teletext"><img src="docs/screenshots/teletext-overview.jpg" alt="Teletext theme" width="100%"></a><br>
-<b>Teletext</b> &middot; <sub>Dark</sub><br>
-<sub>80s TV text: pure black, the eight TV colours, block-graphic bars.</sub><br>
-<sub><code>sh -s teletext</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-pixel"><img src="docs/screenshots/pixel-overview.jpg" alt="8-bit theme" width="100%"></a><br>
-<b>8-bit</b> &middot; <sub>Dark</sub><br>
-<sub>Pixel-RPG game menus with notched borders and health-bar meters.</sub><br>
-<sub><code>sh -s pixel</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-aquarium"><img src="docs/screenshots/aquarium-overview.jpg" alt="Aquarium theme" width="100%"></a><br>
-<b>Aquarium</b> &middot; <sub>Dark</sub><br>
-<sub>Deep-sea gradient, glass panels and slowly rising bubbles.</sub><br>
-<sub><code>sh -s aquarium</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-circadian"><img src="docs/screenshots/circadian-overview.jpg" alt="Circadian theme" width="100%"></a><br>
-<b>Circadian</b> &middot; <sub>Auto</sub><br>
-<sub>Changes palette with the local time: dawn, day, dusk, night.</sub><br>
-<sub><code>sh -s circadian</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-brutal"><img src="docs/screenshots/brutal-overview.jpg" alt="Neobrutalism theme" width="100%"></a><br>
-<b>Neobrutalism</b> &middot; <sub>Light</sub><br>
-<sub>Cream paper, thick black outlines, hard shadows, buttons that press down.</sub><br>
-<sub><code>sh -s brutal</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-paper"><img src="docs/screenshots/paper-overview.jpg" alt="Paper theme" width="100%"></a><br>
-<b>Paper</b> &middot; <sub>Light</sub><br>
-<sub>E-ink / printed page: book serif, hairline rules, one red accent.</sub><br>
-<sub><code>sh -s paper</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-retro"><img src="docs/screenshots/retro-overview.jpg" alt="Retro theme" width="100%"></a><br>
-<b>Retro</b> &middot; <sub>Light</sub><br>
-<sub>90s desktop: bevelled windows, navy title bars, blue-block meters.</sub><br>
-<sub><code>sh -s retro</code></sub>
-</td></tr>
-<tr><td width="50%" valign="top">
-<a href="luci-theme-sumie"><img src="docs/screenshots/sumie-overview.jpg" alt="Sumi-e theme" width="100%"></a><br>
-<b>Sumi-e</b> &middot; <sub>Light</sub><br>
-<sub>Washi paper, brush-stroke rules, a red seal, lots of whitespace.</sub><br>
-<sub><code>sh -s sumie</code></sub>
-</td><td width="50%" valign="top">
-<a href="luci-theme-topo"><img src="docs/screenshots/topo-overview.jpg" alt="Topo theme" width="100%"></a><br>
-<b>Topo</b> &middot; <sub>Light</sub><br>
-<sub>Sepia sea-chart with contour rings and a compass rose.</sub><br>
-<sub><code>sh -s topo</code></sub>
-</td></tr>
+<tr>
+<td width="25%" valign="top" align="center">
+<a href="themes/luci-theme-rack"><img src="docs/screenshots/rack-overview.jpg" alt="Rack theme" width="100%"></a><br>
+<b>Rack</b><br><sub>Dark</sub><br><sub><code>sh -s rack</code></sub>
+</td>
+<td width="25%" valign="top" align="center">
+<a href="themes/luci-theme-blueprint"><img src="docs/screenshots/blueprint-overview.jpg" alt="Blueprint theme" width="100%"></a><br>
+<b>Blueprint</b><br><sub>Dark</sub><br><sub><code>sh -s blueprint</code></sub>
+</td>
+<td width="25%" valign="top" align="center">
+<a href="themes/luci-theme-teletext"><img src="docs/screenshots/teletext-overview.jpg" alt="Teletext theme" width="100%"></a><br>
+<b>Teletext</b><br><sub>Dark</sub><br><sub><code>sh -s teletext</code></sub>
+</td>
+<td width="25%" valign="top" align="center">
+<a href="themes/luci-theme-aquarium"><img src="docs/screenshots/aquarium-overview.jpg" alt="Aquarium theme" width="100%"></a><br>
+<b>Aquarium</b><br><sub>Dark</sub><br><sub><code>sh -s aquarium</code></sub>
+</td>
+</tr>
 </table>
+<sub>Released 2026-10-30.</sub>
+<!-- GALLERY:END -->
+
+A new batch ships every Friday.
+
+## All themes
+
+<!-- LIST:START -->
+| Theme | Mode | Look | Install name | Preview |
+|---|---|---|---|---|
+| [Rack](themes/luci-theme-rack) | Dark | Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs. | `rack` | [overview](docs/screenshots/rack-overview.jpg) &middot; [settings](docs/screenshots/rack-settings.jpg) |
+| [Blueprint](themes/luci-theme-blueprint) | Dark | White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering. | `blueprint` | [overview](docs/screenshots/blueprint-overview.jpg) &middot; [settings](docs/screenshots/blueprint-settings.jpg) |
+| [Teletext](themes/luci-theme-teletext) | Dark | 80s TV text: pure black, the eight TV colours, block-graphic bars. | `teletext` | [overview](docs/screenshots/teletext-overview.jpg) &middot; [settings](docs/screenshots/teletext-settings.jpg) |
+| [Aquarium](themes/luci-theme-aquarium) | Dark | Deep-sea gradient, glass panels and slowly rising bubbles. | `aquarium` | [overview](docs/screenshots/aquarium-overview.jpg) &middot; [settings](docs/screenshots/aquarium-settings.jpg) |
+| [Obsidian](themes/luci-theme-obsidian) | Dark | Slate and teal, rounded cards. The calm all-rounder. | `obsidian` | [overview](docs/screenshots/obsidian-overview.jpg) &middot; [settings](docs/screenshots/obsidian-settings.jpg) |
+| [Glass](themes/luci-theme-glass) | Dark | Glassmorphism: frosted cards over a violet and cyan gradient. | `glass` | [overview](docs/screenshots/glass-overview.jpg) &middot; [settings](docs/screenshots/glass-settings.jpg) |
+| [Mission Control](themes/luci-theme-mission) | Dark | Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock. | `mission` | [overview](docs/screenshots/mission-overview.jpg) &middot; [settings](docs/screenshots/mission-settings.jpg) |
+| [Terminal](themes/luci-theme-terminal) | Dark | Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons. | `terminal` | [overview](docs/screenshots/terminal-overview.jpg) &middot; [settings](docs/screenshots/terminal-settings.jpg) |
+| [Synthwave](themes/luci-theme-synthwave) | Dark | Neon outrun: striped sun, perspective grid floor, glowing panels. | `synthwave` | [overview](docs/screenshots/synthwave-overview.jpg) &middot; [settings](docs/screenshots/synthwave-settings.jpg) |
+| [8-bit](themes/luci-theme-pixel) | Dark | Pixel-RPG game menus with notched borders and health-bar meters. | `pixel` | [overview](docs/screenshots/pixel-overview.jpg) &middot; [settings](docs/screenshots/pixel-settings.jpg) |
+| [Circadian](themes/luci-theme-circadian) | Auto | Changes palette with the local time: dawn, day, dusk, night. | `circadian` | [overview](docs/screenshots/circadian-overview.jpg) &middot; [settings](docs/screenshots/circadian-settings.jpg) |
+| [Neobrutalism](themes/luci-theme-brutal) | Light | Cream paper, thick black outlines, hard shadows, buttons that press down. | `brutal` | [overview](docs/screenshots/brutal-overview.jpg) &middot; [settings](docs/screenshots/brutal-settings.jpg) |
+| [Paper](themes/luci-theme-paper) | Light | E-ink / printed page: book serif, hairline rules, one red accent. | `paper` | [overview](docs/screenshots/paper-overview.jpg) &middot; [settings](docs/screenshots/paper-settings.jpg) |
+| [Retro](themes/luci-theme-retro) | Light | 90s desktop: bevelled windows, navy title bars, blue-block meters. | `retro` | [overview](docs/screenshots/retro-overview.jpg) &middot; [settings](docs/screenshots/retro-settings.jpg) |
+| [Sumi-e](themes/luci-theme-sumie) | Light | Washi paper, brush-stroke rules, a red seal, lots of whitespace. | `sumie` | [overview](docs/screenshots/sumie-overview.jpg) &middot; [settings](docs/screenshots/sumie-settings.jpg) |
+| [Topo](themes/luci-theme-topo) | Light | Sepia sea-chart with contour rings and a compass rose. | `topo` | [overview](docs/screenshots/topo-overview.jpg) &middot; [settings](docs/screenshots/topo-settings.jpg) |
+<!-- LIST:END -->
 
 ### Circadian through the day
 
@@ -137,19 +95,19 @@ uci set luci.main.mediaurlbase=/luci-static/bootstrap && uci commit luci
 Each theme folder is a complete, self-contained package source and has its own `install.sh`:
 
 ```sh
-scp -O -r luci-theme-rack root@192.168.1.1:/tmp/
+scp -O -r themes/luci-theme-rack root@192.168.1.1:/tmp/
 ssh root@192.168.1.1 sh /tmp/luci-theme-rack/install.sh
 ```
 
 To update only the stylesheet of an installed theme:
 
 ```sh
-scp -O luci-theme-rack/htdocs/luci-static/rack/cascade.css root@192.168.1.1:/www/luci-static/rack/cascade.css
+scp -O themes/luci-theme-rack/htdocs/luci-static/rack/cascade.css root@192.168.1.1:/www/luci-static/rack/cascade.css
 ```
 
 ## Build as an OpenWrt package
 
-Every theme has a standard `luci.mk` Makefile. Drop the folder into your `feeds/luci/themes/` (or a custom feed) and enable `luci-theme-<name>` in `make menuconfig`.
+Every theme has a standard `luci.mk` Makefile. Drop a folder from `themes/` into your `feeds/luci/themes/` (or a custom feed) and enable `luci-theme-<name>` in `make menuconfig`.
 
 ## Customise
 
