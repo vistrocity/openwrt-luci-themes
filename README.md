@@ -2,11 +2,11 @@
 
 # openwrt-luci-themes
 
-**Sixteen custom themes for the OpenWrt LuCI web interface.**
+**Custom themes for the OpenWrt LuCI web interface, with new ones every Friday.**
 Install any of them on a router with one line.
 
 ![OpenWrt](https://img.shields.io/badge/OpenWrt-25.12-00B5E2?style=flat-square)
-![Themes](https://img.shields.io/badge/themes-16-6f42c1?style=flat-square)
+![New themes weekly](https://img.shields.io/badge/new%20themes-every%20Friday-6f42c1?style=flat-square)
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue?style=flat-square)
 
 </div>
