@@ -21,10 +21,11 @@ On the router (SSH in as root):
 wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
 ```
 
-Swap `aquarium` for any theme name: `obsidian`, `glass`, `mission`, `blueprint`, `terminal`, `synthwave`, `rack`, `teletext`, `pixel`, `aquarium`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
+Swap `aquarium` for any theme name: <!-- NAMES:START -->`obsidian`, `glass`, `mission`, `blueprint`, `terminal`, `synthwave`, `rack`, `teletext`, `pixel`, `aquarium`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
 
 ## Gallery
 
+<!-- GALLERY:START -->
 <table>
 <tr><td width="50%" valign="top">
 <a href="luci-theme-obsidian"><img src="docs/screenshots/obsidian-overview.jpg" alt="Obsidian theme" width="100%"></a><br>
@@ -115,6 +116,7 @@ Swap `aquarium` for any theme name: `obsidian`, `glass`, `mission`, `blueprint`,
 <sub><code>sh -s topo</code></sub>
 </td></tr>
 </table>
+<!-- GALLERY:END -->
 
 ### Circadian through the day
 
