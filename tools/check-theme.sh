@@ -3,7 +3,8 @@
 #   tools/check-theme.sh <slug> [slug...]       add --qa to also run the browser QA (phone width, contrast, focus)
 # Checks: file layout, CSS brace balance, leftover template tokens, uci key has no '-', registration in
 # install.sh and tools/themes.tsv, ucode pitfalls in inline scripts, logo files, shell syntax,
-# reduced-motion guard for animated themes, and a few third-party brand words.
+# reduced-motion guard for animated themes, a few third-party brand words, and tools/audit-theme.sh
+# (no network calls, eval, storage, external URLs or unexpected script tags in theme code).
 set -u
 ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 QA=0; THEMES=""
@@ -57,6 +58,7 @@ for f in glob.glob(sys.argv[1] + '/*.ut'):
             ok = False; print('  FAIL ucode would parse "{{" / "{%" / "{#" inside inline script in ' + f)
 sys.exit(0 if ok else 1)
 PY
+	sh "$ROOT/tools/audit-theme.sh" "$t" || FAIL=1
 	xmllint --noout "$st/logo.svg" 2>/dev/null || bad "logo.svg is not valid XML"
 	if command -v identify >/dev/null; then [ "$(identify -format '%wx%h' "$st/logo_48.png" 2>/dev/null)" = "48x48" ] || bad "logo_48.png is not 48x48"; fi
 	if [ "$(grep -o '<[a-z]*' "$st/logo.svg" | wc -l)" -le 3 ]; then bad "logo.svg looks like the scaffold placeholder"; fi

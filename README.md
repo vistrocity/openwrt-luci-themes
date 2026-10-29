@@ -135,6 +135,17 @@ node tools/previews/make-previews.js rack topo  # just these
 
 The themes are forks of [`luci-theme-bootstrap`](https://github.com/openwrt/luci/tree/master/themes/luci-theme-bootstrap), with the stock rules kept intact and a theme-specific layer added on top. They were developed against OpenWrt 25.12 on a MediaTek Filogic router (ucode templates). Older LuCI releases that still use Lua templates are not supported.
 
+## What the code does
+
+A theme is more than CSS: each one ships a small menu script, a login-page script and three ucode templates (header, footer, login), all adapted from luci-theme-bootstrap. They run in your browser with the rights of the logged-in admin, so they are kept deliberately boring. Every theme is checked by `tools/audit-theme.sh`, which fails on:
+
+- network calls (`fetch`, `XMLHttpRequest`, `WebSocket`, `sendBeacon`), `eval` / `new Function`, `document.write`, cookies and browser storage
+- any external URL, `@import`, `<iframe>`, or `<script src>` other than LuCI's own scripts
+- downloads, pipes to a shell or package installs in the per-theme shell scripts
+- unexpected file types inside a theme folder
+
+The only thing that touches the network is the top-level `install.sh`, which downloads this repository from GitHub; read it before running it. The audit is a pattern scan, not a formal review, and the code is small enough to read yourself.
+
 ## Third-party LuCI apps
 
 The themes are forks of luci-theme-bootstrap and keep its class names and CSS variables, so apps built from the standard LuCI pieces (sections, tables, buttons, tabs, dropdowns, progress bars) pick the theme up automatically.
