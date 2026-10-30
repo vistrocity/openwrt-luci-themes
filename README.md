@@ -23,7 +23,7 @@ On the router (SSH in as root):
 wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
 ```
 
-Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
+Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`, `handheld`, `nixie`, `subway`, `chalkboard`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
 
 ## Latest drop
 
@@ -31,20 +31,20 @@ Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `te
 <table>
 <tr>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-rack"><img src="docs/screenshots/rack-overview.jpg" alt="Rack theme" width="100%"></a><br>
-<b>Rack</b><br><sub>Dark</sub><br><sub><code>sh -s rack</code></sub>
+<a href="themes/luci-theme-handheld"><img src="docs/screenshots/handheld-overview.jpg" alt="Handheld theme" width="100%"></a><br>
+<b>Handheld</b><br><sub>Light</sub><br><sub><code>sh -s handheld</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-blueprint"><img src="docs/screenshots/blueprint-overview.jpg" alt="Blueprint theme" width="100%"></a><br>
-<b>Blueprint</b><br><sub>Dark</sub><br><sub><code>sh -s blueprint</code></sub>
+<a href="themes/luci-theme-nixie"><img src="docs/screenshots/nixie-overview.jpg" alt="Nixie theme" width="100%"></a><br>
+<b>Nixie</b><br><sub>Dark</sub><br><sub><code>sh -s nixie</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-teletext"><img src="docs/screenshots/teletext-overview.jpg" alt="Teletext theme" width="100%"></a><br>
-<b>Teletext</b><br><sub>Dark</sub><br><sub><code>sh -s teletext</code></sub>
+<a href="themes/luci-theme-subway"><img src="docs/screenshots/subway-overview.jpg" alt="Subway theme" width="100%"></a><br>
+<b>Subway</b><br><sub>Light</sub><br><sub><code>sh -s subway</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-aquarium"><img src="docs/screenshots/aquarium-overview.jpg" alt="Aquarium theme" width="100%"></a><br>
-<b>Aquarium</b><br><sub>Dark</sub><br><sub><code>sh -s aquarium</code></sub>
+<a href="themes/luci-theme-chalkboard"><img src="docs/screenshots/chalkboard-overview.jpg" alt="Chalkboard theme" width="100%"></a><br>
+<b>Chalkboard</b><br><sub>Dark</sub><br><sub><code>sh -s chalkboard</code></sub>
 </td>
 </tr>
 </table>
@@ -58,20 +58,24 @@ A new batch ships every Friday.
 <!-- LIST:START -->
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Handheld](themes/luci-theme-handheld) | Light | Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink. | `handheld` | [overview](docs/screenshots/handheld-overview.jpg) &middot; [settings](docs/screenshots/handheld-settings.jpg) |
+| [Nixie](themes/luci-theme-nixie) | Dark | Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock. | `nixie` | [overview](docs/screenshots/nixie-overview.jpg) &middot; [settings](docs/screenshots/nixie-settings.jpg) |
+| [Subway](themes/luci-theme-subway) | Light | A transit map: the menu is a set of coloured lines with station dots, sections hang off a route line, meters end in a station. | `subway` | [overview](docs/screenshots/subway-overview.jpg) &middot; [settings](docs/screenshots/subway-settings.jpg) |
+| [Chalkboard](themes/luci-theme-chalkboard) | Dark | Matte slate with chalk lettering: hand-drawn wobbly boxes, chalk-stroke meters, a wooden rail and ledge. | `chalkboard` | [overview](docs/screenshots/chalkboard-overview.jpg) &middot; [settings](docs/screenshots/chalkboard-settings.jpg) |
 | [Rack](themes/luci-theme-rack) | Dark | Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs. | `rack` | [overview](docs/screenshots/rack-overview.jpg) &middot; [settings](docs/screenshots/rack-settings.jpg) |
 | [Blueprint](themes/luci-theme-blueprint) | Dark | White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering. | `blueprint` | [overview](docs/screenshots/blueprint-overview.jpg) &middot; [settings](docs/screenshots/blueprint-settings.jpg) |
 | [Teletext](themes/luci-theme-teletext) | Dark | 80s TV text: pure black, the eight TV colours, block-graphic bars. | `teletext` | [overview](docs/screenshots/teletext-overview.jpg) &middot; [settings](docs/screenshots/teletext-settings.jpg) |
 | [Aquarium](themes/luci-theme-aquarium) | Dark | Deep-sea gradient, glass panels and slowly rising bubbles. | `aquarium` | [overview](docs/screenshots/aquarium-overview.jpg) &middot; [settings](docs/screenshots/aquarium-settings.jpg) |
-| [Obsidian](themes/luci-theme-obsidian) | Dark | Slate and teal, rounded cards. The calm all-rounder. | `obsidian` | [overview](docs/screenshots/obsidian-overview.jpg) &middot; [settings](docs/screenshots/obsidian-settings.jpg) |
-| [Glass](themes/luci-theme-glass) | Dark | Glassmorphism: frosted cards over a violet and cyan gradient. | `glass` | [overview](docs/screenshots/glass-overview.jpg) &middot; [settings](docs/screenshots/glass-settings.jpg) |
-| [Mission Control](themes/luci-theme-mission) | Dark | Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock. | `mission` | [overview](docs/screenshots/mission-overview.jpg) &middot; [settings](docs/screenshots/mission-settings.jpg) |
-| [Terminal](themes/luci-theme-terminal) | Dark | Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons. | `terminal` | [overview](docs/screenshots/terminal-overview.jpg) &middot; [settings](docs/screenshots/terminal-settings.jpg) |
 
 <details>
 <summary><b>Show older themes</b></summary>
 
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Obsidian](themes/luci-theme-obsidian) | Dark | Slate and teal, rounded cards. The calm all-rounder. | `obsidian` | [overview](docs/screenshots/obsidian-overview.jpg) &middot; [settings](docs/screenshots/obsidian-settings.jpg) |
+| [Glass](themes/luci-theme-glass) | Dark | Glassmorphism: frosted cards over a violet and cyan gradient. | `glass` | [overview](docs/screenshots/glass-overview.jpg) &middot; [settings](docs/screenshots/glass-settings.jpg) |
+| [Mission Control](themes/luci-theme-mission) | Dark | Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock. | `mission` | [overview](docs/screenshots/mission-overview.jpg) &middot; [settings](docs/screenshots/mission-settings.jpg) |
+| [Terminal](themes/luci-theme-terminal) | Dark | Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons. | `terminal` | [overview](docs/screenshots/terminal-overview.jpg) &middot; [settings](docs/screenshots/terminal-settings.jpg) |
 | [Synthwave](themes/luci-theme-synthwave) | Dark | Neon outrun: striped sun, perspective grid floor, glowing panels. | `synthwave` | [overview](docs/screenshots/synthwave-overview.jpg) &middot; [settings](docs/screenshots/synthwave-settings.jpg) |
 | [8-bit](themes/luci-theme-pixel) | Dark | Pixel-RPG game menus with notched borders and health-bar meters. | `pixel` | [overview](docs/screenshots/pixel-overview.jpg) &middot; [settings](docs/screenshots/pixel-settings.jpg) |
 | [Circadian](themes/luci-theme-circadian) | Auto | Changes palette with the local time: dawn, day, dusk, night. | `circadian` | [overview](docs/screenshots/circadian-overview.jpg) &middot; [settings](docs/screenshots/circadian-settings.jpg) |

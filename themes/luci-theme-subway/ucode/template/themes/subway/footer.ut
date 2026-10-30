@@ -1,0 +1,21 @@
+		{% if (!blank_page): %}
+		</div>
+		<footer>
+			<span>
+				Powered by
+				<a href="https://github.com/openwrt/luci" target="_blank" rel="noreferrer">
+					{{ version.luciname }} ({{ version.luciversion }})</a>
+				/
+				<a href="{{ entityencode(version.disturl ?? '#', true) }}" target="_blank" rel="noreferrer">
+					{{ version.distname }} {{ version.distversion }} ({{ version.distrevision }})</a>
+				{% if (lua_active): %}
+					/ {{ _('Lua compatibility mode active') }}
+				{% endif %}
+			</span>
+			<ul class="breadcrumb pull-right" id="modemenu" style="display:none"></ul>
+		</footer>
+		<script>(function(){var e=document.getElementById('hdr-clock');if(!e)return;function p(n){return (n<10?'0':'')+n}function t(){var d=new Date();e.textContent=p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())}t();setInterval(t,1000)})();</script>
+		<script>L.require('menu-subway')</script>
+		{% endif %}
+	</body>
+</html>

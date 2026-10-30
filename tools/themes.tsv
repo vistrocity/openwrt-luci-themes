@@ -1,16 +1,20 @@
-rack	Rack	Dark	Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs.	2026-10-30
-blueprint	Blueprint	Dark	White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering.	2026-10-30
-teletext	Teletext	Dark	80s TV text: pure black, the eight TV colours, block-graphic bars.	2026-10-30
-aquarium	Aquarium	Dark	Deep-sea gradient, glass panels and slowly rising bubbles.	2026-10-30
-obsidian	Obsidian	Dark	Slate and teal, rounded cards. The calm all-rounder.	2026-10-30
-glass	Glass	Dark	Glassmorphism: frosted cards over a violet and cyan gradient.	2026-10-30
-mission	Mission Control	Dark	Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock.	2026-10-30
-terminal	Terminal	Dark	Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons.	2026-10-30
-synthwave	Synthwave	Dark	Neon outrun: striped sun, perspective grid floor, glowing panels.	2026-10-30
-pixel	8-bit	Dark	Pixel-RPG game menus with notched borders and health-bar meters.	2026-10-30
-circadian	Circadian	Auto	Changes palette with the local time: dawn, day, dusk, night.	2026-10-30
-brutal	Neobrutalism	Light	Cream paper, thick black outlines, hard shadows, buttons that press down.	2026-10-30
-paper	Paper	Light	E-ink / printed page: book serif, hairline rules, one red accent.	2026-10-30
-retro	Retro	Light	90s desktop: bevelled windows, navy title bars, blue-block meters.	2026-10-30
-sumie	Sumi-e	Light	Washi paper, brush-stroke rules, a red seal, lots of whitespace.	2026-10-30
-topo	Topo	Light	Sepia sea-chart with contour rings and a compass rose.	2026-10-30
+rack	Rack	Dark	Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs.	2026-10-27
+blueprint	Blueprint	Dark	White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering.	2026-10-27
+teletext	Teletext	Dark	80s TV text: pure black, the eight TV colours, block-graphic bars.	2026-10-27
+aquarium	Aquarium	Dark	Deep-sea gradient, glass panels and slowly rising bubbles.	2026-10-27
+obsidian	Obsidian	Dark	Slate and teal, rounded cards. The calm all-rounder.	2026-10-27
+glass	Glass	Dark	Glassmorphism: frosted cards over a violet and cyan gradient.	2026-10-27
+mission	Mission Control	Dark	Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock.	2026-10-27
+terminal	Terminal	Dark	Green-phosphor CRT with scanlines, a root@host prompt and [ bracketed ] buttons.	2026-10-27
+synthwave	Synthwave	Dark	Neon outrun: striped sun, perspective grid floor, glowing panels.	2026-10-27
+pixel	8-bit	Dark	Pixel-RPG game menus with notched borders and health-bar meters.	2026-10-27
+circadian	Circadian	Auto	Changes palette with the local time: dawn, day, dusk, night.	2026-10-27
+brutal	Neobrutalism	Light	Cream paper, thick black outlines, hard shadows, buttons that press down.	2026-10-27
+paper	Paper	Light	E-ink / printed page: book serif, hairline rules, one red accent.	2026-10-27
+retro	Retro	Light	90s desktop: bevelled windows, navy title bars, blue-block meters.	2026-10-27
+sumie	Sumi-e	Light	Washi paper, brush-stroke rules, a red seal, lots of whitespace.	2026-10-27
+topo	Topo	Light	Sepia sea-chart with contour rings and a compass rose.	2026-10-27
+handheld	Handheld	Light	Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink.	2026-10-30
+nixie	Nixie	Dark	Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock.	2026-10-30
+subway	Subway	Light	A transit map: the menu is a set of coloured lines with station dots, sections hang off a route line, meters end in a station.	2026-10-30
+chalkboard	Chalkboard	Dark	Matte slate with chalk lettering: hand-drawn wobbly boxes, chalk-stroke meters, a wooden rail and ledge.	2026-10-30
