@@ -40,5 +40,5 @@ Possible first four: calm light, calm dark, high contrast, large text. Decide af
 
 ## Built
 
-Batch 1 (Fri 6 Nov 2026, tag `v2026.11.06`): handheld, nixie, subway, chalkboard.
-Earlier (launch, Fri 30 Oct): the original 16.
+Batch 1 (Fri 30 Oct 2026, tag `v2026.10.30`): handheld, nixie, subway, chalkboard.
+Launch (Tue 27 Oct): the original 16.

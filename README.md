@@ -46,7 +46,7 @@ Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `te
 </td>
 </tr>
 </table>
-<sub>Released 2026-11-06.</sub>
+<sub>Released 2026-10-30.</sub>
 <!-- GALLERY:END -->
 
 A new batch ships every Friday.

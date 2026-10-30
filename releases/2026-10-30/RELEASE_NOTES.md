@@ -1,4 +1,4 @@
-# v2026.11.06: Batch 1 (four new themes)
+# v2026.10.30: Batch 1 (four new themes)
 
 Batch 1 of the weekly Friday releases. Nothing existing was changed.
 
@@ -23,4 +23,4 @@ Then hard-refresh the browser (Ctrl+Shift+R). Back to the default: System > Syst
 - Tooling: `tools/new-theme.sh`, `tools/screenshots.sh`, `tools/check-theme.sh`, `tools/test-install.sh`; `install.sh` gained `REF=`, `OWT_TARBALL=` and `GITHUB_TOKEN=` options. README gallery and counts are generated from `tools/themes.tsv`.
 - Screenshots use mock data only.
 
-Release steps: merge `release/2026-11-06` into `main` on Fri 6 Nov, then `git tag v2026.11.06 && git push origin v2026.11.06`, create the GitHub release from this file.
+Release steps (done): merge `release/2026-11-06` into `main`, then tag `v2026.10.30` and create the GitHub release from this file.

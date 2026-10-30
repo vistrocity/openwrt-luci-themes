@@ -1,10 +1,10 @@
-# r/openwrt post for Fri 6 Nov (draft; check the sub's self-promotion rules first)
+# r/openwrt post for the Fri 30 Oct drop (draft; check the sub's self-promotion rules first)
 
 **Title:** Four more LuCI themes: Handheld (green LCD), Nixie, Subway, Chalkboard
 
 **Body (markdown):**
 
-Four new themes for the LuCI theme pack I posted last week. Each one is a full redesign rather than a recolour, and all keep forms and tables usable (focus states, contrast, phone width, reduced-motion).
+Four new themes for the LuCI theme pack I posted earlier this week. Each one is a full redesign rather than a recolour, and all keep forms and tables usable (focus states, contrast, phone width, reduced-motion).
 
 - **Handheld**: four-shade green LCD, chunky mono text, keycap buttons that sink
 - **Nixie**: glowing orange digits on dark brass, tube-style meters
