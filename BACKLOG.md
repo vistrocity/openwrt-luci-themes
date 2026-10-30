@@ -31,6 +31,13 @@ Workflow: `tools/new-theme.sh <slug> <Name>` -> edit CSS -> `tools/check-theme.s
 | 11 | atomic | Mid-century modern: boomerang shapes, starbursts, teal/mustard/walnut, rounded geometric sans |
 | 12 | observatory | Star-chart: deep indigo, constellation line work, brass dial rings, serif italics |
 
+## Parked (revisit around end of Nov 2026, after a month of traffic)
+
+**Minimal series:** CSS-only themes that try to do nothing extra. Stock bootstrap templates, no theme JS of their own
+(reuse LuCI's menu script), no clock, no animation. `audit-theme.sh` would fail any minimal theme that ships a `.js`
+file or inline `<script>`. Needs a `--minimal` option in `new-theme.sh`. Suggested by a r/openwrt commenter.
+Possible first four: calm light, calm dark, high contrast, large text. Decide after seeing which themes get used.
+
 ## Built
 
 Batch 1 (Fri 6 Nov 2026, tag `v2026.11.06`): handheld, nixie, subway, chalkboard.
