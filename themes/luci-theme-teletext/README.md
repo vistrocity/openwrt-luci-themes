@@ -1,5 +1,9 @@
 # luci-theme-teletext
 
+![Teletext overview](../../docs/screenshots/teletext-overview.jpg)
+
+![Teletext settings page](../../docs/screenshots/teletext-settings.jpg)
+
 Teletext: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 - Pure black with the eight teletext colours; blue/cyan title bars and block-graphic dividers

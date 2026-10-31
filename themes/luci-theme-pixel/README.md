@@ -1,5 +1,9 @@
 # luci-theme-pixel
 
+![Pixel overview](../../docs/screenshots/pixel-overview.jpg)
+
+![Pixel settings page](../../docs/screenshots/pixel-settings.jpg)
+
 8-bit: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 - Game-menu windows with notched pixel borders on deep purple; gold and green accents

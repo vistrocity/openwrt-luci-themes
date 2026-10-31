@@ -1,5 +1,9 @@
 # luci-theme-rack
 
+![Rack overview](../../docs/screenshots/rack-overview.jpg)
+
+![Rack settings page](../../docs/screenshots/rack-settings.jpg)
+
 Rack: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 - Sections are rack units: mounting ears with screws, numbered U labels, brushed metal

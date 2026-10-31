@@ -1,5 +1,9 @@
 # luci-theme-mission
 
+![Mission overview](../../docs/screenshots/mission-overview.jpg)
+
+![Mission settings page](../../docs/screenshots/mission-settings.jpg)
+
 Mission Control: a sci-fi ops-console HUD theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0).
 
 - Near-black navy with a dot grid, amber primary actions, cyan data accents
