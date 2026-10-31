@@ -1,3 +1,6 @@
 .DS_Store
 Thumbs.db
 *.tar.gz
+
+# Internal drafts (never published)
+**/REDDIT.md
