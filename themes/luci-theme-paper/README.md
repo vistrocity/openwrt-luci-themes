@@ -1,5 +1,9 @@
 # luci-theme-paper
 
+![Paper overview](../../docs/screenshots/paper-overview.jpg)
+
+![Paper settings page](../../docs/screenshots/paper-settings.jpg)
+
 Paper: an e-ink / printed-page theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 
 - Warm paper, ink-black type in a book serif (Iowan Old Style / Palatino / Charter / Georgia)

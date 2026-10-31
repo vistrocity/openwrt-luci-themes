@@ -1,5 +1,9 @@
 # luci-theme-topo
 
+![Topo overview](../../docs/screenshots/topo-overview.jpg)
+
+![Topo settings page](../../docs/screenshots/topo-settings.jpg)
+
 Topo: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 
 - Sepia chart paper with faint contour rings in the background, double-ruled chart panels

@@ -1,5 +1,9 @@
 # luci-theme-obsidian
 
+![Obsidian overview](../../docs/screenshots/obsidian-overview.jpg)
+
+![Obsidian settings page](../../docs/screenshots/obsidian-settings.jpg)
+
 Dark LuCI theme with a teal accent, forked from luci-theme-bootstrap (Apache-2.0).
 Dark-only: slate surfaces, rounded cards, glassy sticky header, teal buttons/progress bars.
 

@@ -116,10 +116,11 @@ def new(slug, name, light, color, tag, title, batch=None):
            '<circle cx="50" cy="50" r="26" fill="none" stroke="%s" stroke-width="8"/></svg>' % (p['bg'], p['accent']))
     open(os.path.join(stat, 'logo.svg'), 'w').write(svg)
     open(os.path.join(dst, 'README.md'), 'w').write(
-        '# luci-theme-%s\n\n%s: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). %s theme.\n\n'
+        '# luci-theme-%s\n\n![%s overview](../../docs/screenshots/%s-overview.jpg)\n\n![%s settings page](../../docs/screenshots/%s-settings.jpg)\n\n'
+        '%s: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). %s theme.\n\n'
         '%s\n\n## Install on a router\n    wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s %s\n\n'
         'Then hard-refresh the browser (Ctrl+Shift+R). Revert: System > System > Language and Style, or\n'
-        '`uci set luci.main.mediaurlbase=/luci-static/bootstrap && uci commit luci`.\n' % (slug, name, 'Light' if light else 'Dark', tag or '', slug))
+        '`uci set luci.main.mediaurlbase=/luci-static/bootstrap && uci commit luci`.\n' % (slug, name, slug, name, slug, name, 'Light' if light else 'Dark', tag or '', slug))
     render_png(stat)
     with open(TSV, 'a', encoding='utf-8') as f:
         f.write('\t'.join([slug, name, 'Light' if light else 'Dark', tag or title, batch or next_friday()]) + '\n')

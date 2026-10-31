@@ -1,5 +1,9 @@
 # luci-theme-aquarium
 
+![Aquarium overview](../../docs/screenshots/aquarium-overview.jpg)
+
+![Aquarium settings page](../../docs/screenshots/aquarium-settings.jpg)
+
 Aquarium: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 - Deep teal gradient, translucent glass panels (blur where supported), aqua glow with coral highlights

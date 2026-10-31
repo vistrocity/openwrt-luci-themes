@@ -1,5 +1,9 @@
 # luci-theme-nixie
 
+![Nixie overview](../../docs/screenshots/nixie-overview.jpg)
+
+![Nixie settings page](../../docs/screenshots/nixie-settings.jpg)
+
 Nixie: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock.
