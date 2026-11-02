@@ -150,6 +150,10 @@ A theme is more than CSS: each one ships a small menu script, a login-page scrip
 
 The only thing that touches the network is the top-level `install.sh`, which downloads this repository from GitHub; read it before running it. The audit is a pattern scan, not a formal review, and the code is small enough to read yourself.
 
+## Older LuCI (21.02)
+
+These themes need the ucode LuCI of recent OpenWrt. For routers still on LuCI 21.02 (for example GL.iNet 4.x firmware), the 16 launch themes have been ported by [DrorDvash](https://github.com/DrorDvash/openwrt-21.02-themes), with a [browser playground](https://drordvash.github.io/openwrt-21.02-themes/). It is a separate project: report problems on 21.02 there.
+
 ## Third-party LuCI apps
 
 The themes are forks of luci-theme-bootstrap and keep its class names and CSS variables, so apps built from the standard LuCI pieces (sections, tables, buttons, tabs, dropdowns, progress bars) pick the theme up automatically.
