@@ -2657,7 +2657,7 @@ body[data-page='admin-status-overview'] .cbi-title .label.notice:hover {
 
 /* ==========================================================================
  * Cockpit overrides
- * Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and tape gauges.
+ * Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and round dial meters.
  * ========================================================================== */
 
 :root,
@@ -3178,6 +3178,29 @@ input:focus, textarea:focus, select:focus, .cbi-dropdown:focus, .cbi-dropdown[op
 }
 .cbi-progressbar::before { top: -1.6em; color: var(--amb2); font-family: ui-monospace, Consolas, monospace; text-shadow: 0 0 6px rgba(255, 176, 0, .5); }
 .cbi-progressbar > div { background: linear-gradient(180deg, #cc8c00, #7a5600); border-radius: 2px 0 0 2px; border-right: 3px solid var(--amb2); box-shadow: 3px 0 10px rgba(255, 176, 0, .55); min-width: 4px; }
+
+/* round dials: the little script in footer.ut copies each bar's width into --v (0-100); the face, arc and needle are all CSS.
+ * Meters inside table cells stay as tape gauges. */
+.cbi-value .cbi-progressbar {
+	--v: 0; position: relative; box-sizing: border-box; width: 96px; min-width: 96px; max-width: 96px; flex: none; height: 96px; margin: 6px 0 6px; border-radius: 50%;
+	border: 3px solid #4d5242; overflow: visible;
+	background:
+		radial-gradient(circle closest-side at 50% 50%, #050806 0 64%, transparent 65%),
+		conic-gradient(from 225deg, var(--amb) 0 calc(var(--v) * 2.7deg), #20251c calc(var(--v) * 2.7deg) 270deg, transparent 270deg),
+		#0a0d0b;
+	box-shadow: inset 0 0 10px #000, 0 0 0 2px #000, 0 0 14px rgba(255, 176, 0, .12);
+}
+.cbi-value .cbi-progressbar::before {
+	top: 50%; left: calc(100% + 16px); right: auto; width: max-content; max-width: min(360px, calc(100vw - 250px)); font-size: 12px; transform: translateY(-50%); text-align: left; white-space: normal;
+}
+.cbi-value .cbi-progressbar::after {
+	content: ""; position: absolute; left: 50%; top: 50%; width: 11px; height: 11px; margin: -5.5px 0 0 -5.5px; border-radius: 50%; background: #2a2e26; border: 2px solid var(--amb); z-index: 2; pointer-events: none;
+}
+.cbi-value .cbi-progressbar > div {
+	position: absolute; left: 50%; top: auto; bottom: 50%; width: 3px !important; height: 40%; min-width: 0; margin-left: -1.5px; border: 0; border-radius: 2px 2px 0 0;
+	background: var(--amb2); box-shadow: 0 0 8px rgba(255, 176, 0, .8); transform-origin: 50% 100%; transform: rotate(calc(var(--v) * 2.7deg - 135deg)); z-index: 1;
+}
+@media (prefers-reduced-motion: no-preference) { .cbi-value .cbi-progressbar > div { transition: transform .5s ease-out; } }
 
 footer { color: var(--dim); border-top: 1px solid var(--ln); }
 footer a { color: var(--amb2); }

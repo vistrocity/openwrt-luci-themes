@@ -60,7 +60,7 @@ A new batch ships every Friday.
 |---|---|---|---|---|
 | [Ledger](themes/luci-theme-ledger) | Light | Green-bar accounting paper: tractor-feed edges, ruled columns, typewriter type and rubber-stamp labels. | `ledger` | [overview](docs/screenshots/ledger-overview.jpg) &middot; [settings](docs/screenshots/ledger-settings.jpg) |
 | [Bauhaus](themes/luci-theme-bauhaus) | Light | Flat primaries on warm paper: heavy geometric type, a hard grid, black frames and circle, square and triangle markers. | `bauhaus` | [overview](docs/screenshots/bauhaus-overview.jpg) &middot; [settings](docs/screenshots/bauhaus-settings.jpg) |
-| [Cockpit](themes/luci-theme-cockpit) | Dark | Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and tape gauges. | `cockpit` | [overview](docs/screenshots/cockpit-overview.jpg) &middot; [settings](docs/screenshots/cockpit-settings.jpg) |
+| [Cockpit](themes/luci-theme-cockpit) | Dark | Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and round dial meters. | `cockpit` | [overview](docs/screenshots/cockpit-overview.jpg) &middot; [settings](docs/screenshots/cockpit-settings.jpg) |
 | [Cassette](themes/luci-theme-cassette) | Dark | A hi-fi tape deck: brushed metal, a tape window on every panel, VU-scale meters with a needle and rocker-switch buttons. | `cassette` | [overview](docs/screenshots/cassette-overview.jpg) &middot; [settings](docs/screenshots/cassette-settings.jpg) |
 | [Handheld](themes/luci-theme-handheld) | Light | Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink. | `handheld` | [overview](docs/screenshots/handheld-overview.jpg) &middot; [settings](docs/screenshots/handheld-settings.jpg) |
 | [Nixie](themes/luci-theme-nixie) | Dark | Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock. | `nixie` | [overview](docs/screenshots/nixie-overview.jpg) &middot; [settings](docs/screenshots/nixie-settings.jpg) |
@@ -145,7 +145,7 @@ The themes are forks of [`luci-theme-bootstrap`](https://github.com/openwrt/luci
 
 ## What the code does
 
-A theme is more than CSS: each one ships a small menu script, a login-page script and three ucode templates (header, footer, login), all adapted from luci-theme-bootstrap. They run in your browser with the rights of the logged-in admin, so they are kept deliberately boring. Every theme is checked by `tools/audit-theme.sh`, which fails on:
+A theme is more than CSS: each one ships a small menu script, a login-page script and three ucode templates (header, footer, login), all adapted from luci-theme-bootstrap. A few add one short inline script of their own: a header clock in some themes, and in Cockpit a script that copies each meter's value into a CSS variable so the dials can be drawn. They run in your browser with the rights of the logged-in admin, so they are kept deliberately boring. Every theme is checked by `tools/audit-theme.sh`, which fails on:
 
 - network calls (`fetch`, `XMLHttpRequest`, `WebSocket`, `sendBeacon`), `eval` / `new Function`, `document.write`, cookies and browser storage
 - any external URL, `@import`, `<iframe>`, or `<script src>` other than LuCI's own scripts

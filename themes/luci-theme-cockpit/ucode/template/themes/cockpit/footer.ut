@@ -15,6 +15,7 @@
 			<ul class="breadcrumb pull-right" id="modemenu" style="display:none"></ul>
 		</footer>
 		<script>(function(){var e=document.getElementById('hdr-clock');if(!e)return;function p(n){return (n<10?'0':'')+n}function t(){var d=new Date();e.textContent=p(d.getHours())+':'+p(d.getMinutes())+':'+p(d.getSeconds())}t();setInterval(t,1000)})();</script>
+		<script>(function(){var q=0;function one(b){var f=b.firstElementChild,w=f?parseFloat(f.style.width):0,v=isNaN(w)?0:Math.max(0,Math.min(100,w)).toFixed(1);if(b.style.getPropertyValue('--v')!==v)b.style.setProperty('--v',v)}function all(){q=0;var l=document.querySelectorAll('.cbi-progressbar');for(var i=0;i<l.length;i++)one(l[i])}function sched(){if(!q)q=requestAnimationFrame(all)}all();new MutationObserver(sched).observe(document.body,{subtree:true,childList:true,attributes:true,attributeFilter:['style','data-title']})})();</script>
 		<script>L.require('menu-cockpit')</script>
 		{% endif %}
 	</body>

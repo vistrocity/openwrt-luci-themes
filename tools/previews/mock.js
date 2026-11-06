@@ -56,7 +56,7 @@ function themeInfo(t) {
     dir,
     dm: (hdr.match(/const darkpref = '(true|false)'/) || [, 'true'])[1],
     clock: (hdr.match(/<div class="(?:hdr-clock|mc-clock|bp-stamp)" id="[^"]+"><\/div>/) || [''])[0],
-    script: ((ftr.match(/<script>(\(function\(\)\{var e=document\.getElementById\('(?:hdr-clock|mc-clock|bp-stamp)'\).*?)<\/script>/s)) || [, ''])[1],
+    script: [...ftr.matchAll(/<script>(\(function\(\)\{.*?)<\/script>/gs)].map(m => m[1]).join('\n'),
   };
 }
 
