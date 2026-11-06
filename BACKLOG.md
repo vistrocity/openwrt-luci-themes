@@ -11,14 +11,9 @@ Workflow: `tools/new-theme.sh <slug> <Name>` -> edit CSS -> `tools/check-theme.s
 
 ## Queue (not built yet)
 
-| # | Slug | Idea |
-|---|------|------|
-| 1 | ledger | Green-bar accounting paper: tractor-feed edges, zebra rows, typewriter-ish mono, rubber-stamp status labels |
-| 2 | bauhaus | Flat primaries, heavy geometric sans, hard grid, circles/squares/triangles as UI furniture |
-| 3 | cockpit | Flight-instrument gauges in a night palette (red-free amber/green), round dials for meters, annunciator labels |
-| 4 | cassette | Hi-fi deck: brushed metal, VU needle meters, tape-window panels, rocker-switch buttons |
+Empty. The next batch comes from the Proposed ideas below once approved.
 
-## Proposed (waiting for a go-ahead; queue has only 4 left, so these are the next 8)
+## Proposed (waiting for a go-ahead; these are the next 8)
 
 | # | Slug | Idea |
 |---|------|------|
@@ -48,4 +43,5 @@ Possible first four: calm light, calm dark, high contrast, large text. Decide af
 ## Built
 
 Batch 1 (Fri 30 Oct 2026, tag `v2026.10.30`): handheld, nixie, subway, chalkboard.
+Batch 2 (Fri 6 Nov 2026, tag `v2026.11.06`): ledger, bauhaus, cockpit, cassette.
 Launch (Tue 27 Oct): the original 16.

@@ -23,7 +23,7 @@ On the router (SSH in as root):
 wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
 ```
 
-Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`, `handheld`, `nixie`, `subway`, `chalkboard`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
+Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`, `handheld`, `nixie`, `subway`, `chalkboard`, `ledger`, `bauhaus`, `cockpit`, `cassette`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
 
 ## Latest drop
 
@@ -31,24 +31,24 @@ Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `te
 <table>
 <tr>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-handheld"><img src="docs/screenshots/handheld-overview.jpg" alt="Handheld theme" width="100%"></a><br>
-<b>Handheld</b><br><sub>Light</sub><br><sub><code>sh -s handheld</code></sub>
+<a href="themes/luci-theme-ledger"><img src="docs/screenshots/ledger-overview.jpg" alt="Ledger theme" width="100%"></a><br>
+<b>Ledger</b><br><sub>Light</sub><br><sub><code>sh -s ledger</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-nixie"><img src="docs/screenshots/nixie-overview.jpg" alt="Nixie theme" width="100%"></a><br>
-<b>Nixie</b><br><sub>Dark</sub><br><sub><code>sh -s nixie</code></sub>
+<a href="themes/luci-theme-bauhaus"><img src="docs/screenshots/bauhaus-overview.jpg" alt="Bauhaus theme" width="100%"></a><br>
+<b>Bauhaus</b><br><sub>Light</sub><br><sub><code>sh -s bauhaus</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-subway"><img src="docs/screenshots/subway-overview.jpg" alt="Subway theme" width="100%"></a><br>
-<b>Subway</b><br><sub>Light</sub><br><sub><code>sh -s subway</code></sub>
+<a href="themes/luci-theme-cockpit"><img src="docs/screenshots/cockpit-overview.jpg" alt="Cockpit theme" width="100%"></a><br>
+<b>Cockpit</b><br><sub>Dark</sub><br><sub><code>sh -s cockpit</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-chalkboard"><img src="docs/screenshots/chalkboard-overview.jpg" alt="Chalkboard theme" width="100%"></a><br>
-<b>Chalkboard</b><br><sub>Dark</sub><br><sub><code>sh -s chalkboard</code></sub>
+<a href="themes/luci-theme-cassette"><img src="docs/screenshots/cassette-overview.jpg" alt="Cassette theme" width="100%"></a><br>
+<b>Cassette</b><br><sub>Dark</sub><br><sub><code>sh -s cassette</code></sub>
 </td>
 </tr>
 </table>
-<sub>Released 2026-10-30.</sub>
+<sub>Released 2026-11-06.</sub>
 <!-- GALLERY:END -->
 
 A new batch ships every Friday.
@@ -58,20 +58,24 @@ A new batch ships every Friday.
 <!-- LIST:START -->
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Ledger](themes/luci-theme-ledger) | Light | Green-bar accounting paper: tractor-feed edges, ruled columns, typewriter type and rubber-stamp labels. | `ledger` | [overview](docs/screenshots/ledger-overview.jpg) &middot; [settings](docs/screenshots/ledger-settings.jpg) |
+| [Bauhaus](themes/luci-theme-bauhaus) | Light | Flat primaries on warm paper: heavy geometric type, a hard grid, black frames and circle, square and triangle markers. | `bauhaus` | [overview](docs/screenshots/bauhaus-overview.jpg) &middot; [settings](docs/screenshots/bauhaus-settings.jpg) |
+| [Cockpit](themes/luci-theme-cockpit) | Dark | Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and tape gauges. | `cockpit` | [overview](docs/screenshots/cockpit-overview.jpg) &middot; [settings](docs/screenshots/cockpit-settings.jpg) |
+| [Cassette](themes/luci-theme-cassette) | Dark | A hi-fi tape deck: brushed metal, a tape window on every panel, VU-scale meters with a needle and rocker-switch buttons. | `cassette` | [overview](docs/screenshots/cassette-overview.jpg) &middot; [settings](docs/screenshots/cassette-settings.jpg) |
 | [Handheld](themes/luci-theme-handheld) | Light | Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink. | `handheld` | [overview](docs/screenshots/handheld-overview.jpg) &middot; [settings](docs/screenshots/handheld-settings.jpg) |
 | [Nixie](themes/luci-theme-nixie) | Dark | Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock. | `nixie` | [overview](docs/screenshots/nixie-overview.jpg) &middot; [settings](docs/screenshots/nixie-settings.jpg) |
 | [Subway](themes/luci-theme-subway) | Light | A transit map: the menu is a set of coloured lines with station dots, sections hang off a route line, meters end in a station. | `subway` | [overview](docs/screenshots/subway-overview.jpg) &middot; [settings](docs/screenshots/subway-settings.jpg) |
 | [Chalkboard](themes/luci-theme-chalkboard) | Dark | Matte slate with chalk lettering: hand-drawn wobbly boxes, chalk-stroke meters, a wooden rail and ledge. | `chalkboard` | [overview](docs/screenshots/chalkboard-overview.jpg) &middot; [settings](docs/screenshots/chalkboard-settings.jpg) |
-| [Rack](themes/luci-theme-rack) | Dark | Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs. | `rack` | [overview](docs/screenshots/rack-overview.jpg) &middot; [settings](docs/screenshots/rack-settings.jpg) |
-| [Blueprint](themes/luci-theme-blueprint) | Dark | White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering. | `blueprint` | [overview](docs/screenshots/blueprint-overview.jpg) &middot; [settings](docs/screenshots/blueprint-settings.jpg) |
-| [Teletext](themes/luci-theme-teletext) | Dark | 80s TV text: pure black, the eight TV colours, block-graphic bars. | `teletext` | [overview](docs/screenshots/teletext-overview.jpg) &middot; [settings](docs/screenshots/teletext-settings.jpg) |
-| [Aquarium](themes/luci-theme-aquarium) | Dark | Deep-sea gradient, glass panels and slowly rising bubbles. | `aquarium` | [overview](docs/screenshots/aquarium-overview.jpg) &middot; [settings](docs/screenshots/aquarium-settings.jpg) |
 
 <details>
 <summary><b>Show older themes</b></summary>
 
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Rack](themes/luci-theme-rack) | Dark | Server-rack faceplates with mounting ears, 1U/2U labels and status LEDs. | `rack` | [overview](docs/screenshots/rack-overview.jpg) &middot; [settings](docs/screenshots/rack-settings.jpg) |
+| [Blueprint](themes/luci-theme-blueprint) | Dark | White linework on blueprint blue: drafting grid, hatched meters, FIG. numbering. | `blueprint` | [overview](docs/screenshots/blueprint-overview.jpg) &middot; [settings](docs/screenshots/blueprint-settings.jpg) |
+| [Teletext](themes/luci-theme-teletext) | Dark | 80s TV text: pure black, the eight TV colours, block-graphic bars. | `teletext` | [overview](docs/screenshots/teletext-overview.jpg) &middot; [settings](docs/screenshots/teletext-settings.jpg) |
+| [Aquarium](themes/luci-theme-aquarium) | Dark | Deep-sea gradient, glass panels and slowly rising bubbles. | `aquarium` | [overview](docs/screenshots/aquarium-overview.jpg) &middot; [settings](docs/screenshots/aquarium-settings.jpg) |
 | [Obsidian](themes/luci-theme-obsidian) | Dark | Slate and teal, rounded cards. The calm all-rounder. | `obsidian` | [overview](docs/screenshots/obsidian-overview.jpg) &middot; [settings](docs/screenshots/obsidian-settings.jpg) |
 | [Glass](themes/luci-theme-glass) | Dark | Glassmorphism: frosted cards over a violet and cyan gradient. | `glass` | [overview](docs/screenshots/glass-overview.jpg) &middot; [settings](docs/screenshots/glass-settings.jpg) |
 | [Mission Control](themes/luci-theme-mission) | Dark | Sci-fi HUD in amber and cyan with corner brackets, segmented meters and a live clock. | `mission` | [overview](docs/screenshots/mission-overview.jpg) &middot; [settings](docs/screenshots/mission-settings.jpg) |

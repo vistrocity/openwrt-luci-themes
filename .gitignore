@@ -4,3 +4,4 @@ Thumbs.db
 
 # Internal drafts (never published)
 **/REDDIT.md
+__pycache__/
