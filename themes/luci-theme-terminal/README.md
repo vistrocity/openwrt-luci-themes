@@ -1,5 +1,9 @@
 # luci-theme-terminal
 
+![Terminal overview](../../docs/screenshots/terminal-overview.jpg)
+
+![Terminal settings page](../../docs/screenshots/terminal-settings.jpg)
+
 Terminal: a green-phosphor CRT theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0).
 
 - Black screen, glowing green monospace text, scanline + vignette overlay (never blocks clicks)

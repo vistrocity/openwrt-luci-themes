@@ -1,5 +1,9 @@
 # luci-theme-handheld
 
+![Handheld overview](../../docs/screenshots/handheld-overview.jpg)
+
+![Handheld settings page](../../docs/screenshots/handheld-settings.jpg)
+
 Handheld: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 
 Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink.

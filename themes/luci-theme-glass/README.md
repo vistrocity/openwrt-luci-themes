@@ -1,5 +1,9 @@
 # luci-theme-glass
 
+![Glass overview](../../docs/screenshots/glass-overview.jpg)
+
+![Glass settings page](../../docs/screenshots/glass-settings.jpg)
+
 Glassmorphism LuCI theme, forked from luci-theme-bootstrap (Apache-2.0).
 Violet / cyan / pink gradient backdrop, frosted translucent cards (backdrop blur), glass header,
 gradient sky-to-violet buttons and progress bars. Dark-only.

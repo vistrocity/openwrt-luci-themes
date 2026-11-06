@@ -31,6 +31,13 @@ Workflow: `tools/new-theme.sh <slug> <Name>` -> edit CSS -> `tools/check-theme.s
 | 11 | atomic | Mid-century modern: boomerang shapes, starbursts, teal/mustard/walnut, rounded geometric sans |
 | 12 | observatory | Star-chart: deep indigo, constellation line work, brass dial rings, serif italics |
 
+## Batch 3 note (Fri 13 Nov 2026)
+
+One of the four should be the first theme with a **sidebar layout**: a left menu rail that collapses into a
+slide-out drawer at phone width. CSS plus a short menu script (about 100-150 lines for opening and closing
+submenus). No single-page navigation and nothing that loads or runs LuCI view modules itself, so it still
+passes `audit-theme.sh`. Candidates from the list below: radar, pcb, observatory. Decide when Batch 2 ships.
+
 ## Parked (revisit around end of Nov 2026, after a month of traffic)
 
 **Minimal series:** CSS-only themes that try to do nothing extra. Stock bootstrap templates, no theme JS of their own

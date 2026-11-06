@@ -1,5 +1,9 @@
 # luci-theme-sumie
 
+![Sumie overview](../../docs/screenshots/sumie-overview.jpg)
+
+![Sumie settings page](../../docs/screenshots/sumie-settings.jpg)
+
 Sumi-e: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 
 - Washi-paper background, ink-black serif type, tapering brush-stroke rules under headings

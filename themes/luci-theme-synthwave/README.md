@@ -1,5 +1,9 @@
 # luci-theme-synthwave
 
+![Synthwave overview](../../docs/screenshots/synthwave-overview.jpg)
+
+![Synthwave settings page](../../docs/screenshots/synthwave-settings.jpg)
+
 Synthwave / outrun theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark-only.
 
 - Purple-to-magenta dusk sky with a striped sun and a perspective grid floor on the horizon

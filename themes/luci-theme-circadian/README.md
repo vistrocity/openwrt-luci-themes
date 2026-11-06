@@ -1,5 +1,11 @@
 # luci-theme-circadian
 
+![Circadian overview](../../docs/screenshots/circadian-overview.jpg)
+
+![Circadian settings page](../../docs/screenshots/circadian-settings.jpg)
+
+Dawn, day and night: ![Circadian dawn](../../docs/screenshots/circadian-dawn-overview.jpg) ![Circadian day](../../docs/screenshots/circadian-day-overview.jpg) ![Circadian night](../../docs/screenshots/circadian-night-overview.jpg)
+
 Circadian: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 - Palette changes with the local time: dawn (5-9), day (9-17), dusk (17-20), night (20-5)

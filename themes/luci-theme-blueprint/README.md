@@ -1,5 +1,9 @@
 # luci-theme-blueprint
 
+![Blueprint overview](../../docs/screenshots/blueprint-overview.jpg)
+
+![Blueprint settings page](../../docs/screenshots/blueprint-settings.jpg)
+
 Blueprint: a technical-drawing theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0).
 
 - White linework on blueprint blue, with a 20px / 100px drafting grid behind everything

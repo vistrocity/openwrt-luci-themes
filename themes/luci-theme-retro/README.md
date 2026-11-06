@@ -1,5 +1,9 @@
 # luci-theme-retro
 
+![Retro overview](../../docs/screenshots/retro-overview.jpg)
+
+![Retro settings page](../../docs/screenshots/retro-settings.jpg)
+
 Retro: a 90s desktop theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 Original styling only: no logos, icons or fonts from any operating system are used.
 

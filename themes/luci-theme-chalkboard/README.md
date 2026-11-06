@@ -1,5 +1,9 @@
 # luci-theme-chalkboard
 
+![Chalkboard overview](../../docs/screenshots/chalkboard-overview.jpg)
+
+![Chalkboard settings page](../../docs/screenshots/chalkboard-settings.jpg)
+
 Chalkboard: a custom theme for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Dark theme.
 
 Matte slate with chalk lettering: hand-drawn wobbly boxes, chalk-stroke meters, a wooden rail and ledge.

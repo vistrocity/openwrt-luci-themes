@@ -1,5 +1,9 @@
 # luci-theme-brutal
 
+![Brutal overview](../../docs/screenshots/brutal-overview.jpg)
+
+![Brutal settings page](../../docs/screenshots/brutal-settings.jpg)
+
 Neobrutalism for LuCI, forked from luci-theme-bootstrap (Apache-2.0). Light theme.
 
 - Cream dotted paper, 3px black outlines, hard offset shadows, flat loud colours
