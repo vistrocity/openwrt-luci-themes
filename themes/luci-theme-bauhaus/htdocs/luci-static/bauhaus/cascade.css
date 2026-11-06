@@ -3103,7 +3103,7 @@ a:hover { color: var(--rd); }
 /* header: a black bar with the three basic shapes as the brand mark */
 header { background: var(--bk); border-bottom: 6px solid var(--yl); box-shadow: none; }
 header a { color: var(--pp); font-weight: 700; text-decoration: none; }
-header .brand { color: var(--pp); text-transform: uppercase; letter-spacing: .2em; font-weight: 800; padding-left: 62px; position: relative; }
+header .brand { color: var(--pp); text-transform: uppercase; letter-spacing: .2em; font-weight: 800; padding-left: 78px; position: relative; }
 header .brand::before {
 	content: ""; position: absolute; left: 12px; top: 50%; width: 42px; height: 18px; transform: translateY(-50%);
 	background:
@@ -3181,7 +3181,7 @@ footer a { color: var(--yl); }
 @media (max-width: 600px) {
 	#maincontent { padding: 14px 10px 8px; }
 	h2 { font-size: 22px; }
-	header .brand { padding-left: 58px; }
+	header .brand { padding-left: 74px; }
 }
 
 /* --- Accessibility and small-screen baseline (keep these when restyling) ---- */
