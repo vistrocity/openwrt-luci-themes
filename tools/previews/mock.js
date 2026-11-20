@@ -56,17 +56,18 @@ function themeInfo(t) {
     dir,
     dm: (hdr.match(/const darkpref = '(true|false)'/) || [, 'true'])[1],
     clock: (hdr.match(/<div class="(?:hdr-clock|mc-clock|bp-stamp)" id="[^"]+"><\/div>/) || [''])[0],
+    toggle: ((hdr.match(/<input[^>]*sb-toggle[^>]*>\s*<label[^>]*sb-burger[\s\S]*?<\/label>/) || [''])[0]),
     script: [...ftr.matchAll(/<script>(\(function\(\)\{.*?)<\/script>/gs)].map(m => m[1]).join('\n'),
   };
 }
 
 function pageHtml(t, page, tod) {
-  const { dir, dm, clock, script } = themeInfo(t);
+  const { dir, dm, clock, script, toggle } = themeInfo(t);
   return `<!doctype html><html lang="en" data-darkmode="${dm}"${tod ? ` data-tod="${tod}"` : ''}><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="file://${dir}/htdocs/luci-static/${t}/cascade.css">
 <link rel="stylesheet" media="only screen and (max-width: 854px)" href="file://${dir}/htdocs/luci-static/${t}/mobile.css"></head>
-<body class="lang_en"><header><a class="brand" href="#">router</a><ul class="nav" id="topmenu">${nav(page === 'overview' ? 'Status' : 'System')}</ul>${clock}
+<body class="lang_en"><header><a class="brand" href="#">router</a>${toggle}<ul class="nav" id="topmenu">${nav(page === 'overview' ? 'Status' : 'System')}</ul>${clock}
 <div id="indicators" class="pull-right"><span class="label notice">Refreshing</span></div></header>
 <div id="maincontent" class="container">${page === 'overview' ? overview : settings}</div>
 <footer><span>Powered by LuCI / OpenWrt 25.12.6</span></footer>

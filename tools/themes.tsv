@@ -22,3 +22,7 @@ ledger	Ledger	Light	Green-bar accounting paper: tractor-feed edges, ruled column
 bauhaus	Bauhaus	Light	Flat primaries on warm paper: heavy geometric type, a hard grid, black frames and circle, square and triangle markers.	2026-11-06
 cockpit	Cockpit	Dark	Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and round dial meters.	2026-11-06
 cassette	Cassette	Dark	A hi-fi tape deck: brushed metal, a tape window on every panel, VU-scale meters with a needle and rocker-switch buttons.	2026-11-06
+radar	Radar	Dark	A phosphor scope with a left range rail: green on black, range rings, corner brackets, blip labels and a sweep that stops for reduced motion.	2026-11-20
+newsprint	Newsprint	Light	A broadsheet front page: masthead with double rules, section tabs, headline serif, drop caps, column rules and halftone shading.	2026-11-20
+typewriter	Typewriter	Light	Cream stock in the carriage: monospace throughout, ink-ribbon black and red, bracketed keys, underscore fields and a blinking caret.	2026-11-20
+pcb	PCB	Dark	A solder-green board: copper-edged panels with corner vias, silkscreen reference labels, gold pad meters and a connector strip.	2026-11-20
