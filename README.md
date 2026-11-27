@@ -23,7 +23,7 @@ On the router (SSH in as root):
 wget -qO- https://raw.githubusercontent.com/vistrocity/openwrt-luci-themes/main/install.sh | sh -s aquarium
 ```
 
-Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`, `handheld`, `nixie`, `subway`, `chalkboard`, `ledger`, `bauhaus`, `cockpit`, `cassette`, `radar`, `newsprint`, `typewriter`, `pcb`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
+Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `teletext`, `aquarium`, `obsidian`, `glass`, `mission`, `terminal`, `synthwave`, `pixel`, `circadian`, `brutal`, `paper`, `retro`, `sumie`, `topo`, `handheld`, `nixie`, `subway`, `chalkboard`, `ledger`, `bauhaus`, `cockpit`, `cassette`, `radar`, `newsprint`, `typewriter`, `pcb`, `seismograph`, `apothecary`, `atomic`, `observatory`<!-- NAMES:END -->. Then hard-refresh the browser (Ctrl+Shift+R). The theme also shows up under **System > System > Language and Style**.
 
 ## Latest drop
 
@@ -31,24 +31,24 @@ Swap `aquarium` for any theme name: <!-- NAMES:START -->`rack`, `blueprint`, `te
 <table>
 <tr>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-radar"><img src="docs/screenshots/radar-overview.jpg" alt="Radar theme" width="100%"></a><br>
-<b>Radar</b><br><sub>Dark</sub><br><sub><code>sh -s radar</code></sub>
+<a href="themes/luci-theme-seismograph"><img src="docs/screenshots/seismograph-overview.jpg" alt="Seismograph theme" width="100%"></a><br>
+<b>Seismograph</b><br><sub>Light</sub><br><sub><code>sh -s seismograph</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-newsprint"><img src="docs/screenshots/newsprint-overview.jpg" alt="Newsprint theme" width="100%"></a><br>
-<b>Newsprint</b><br><sub>Light</sub><br><sub><code>sh -s newsprint</code></sub>
+<a href="themes/luci-theme-apothecary"><img src="docs/screenshots/apothecary-overview.jpg" alt="Apothecary theme" width="100%"></a><br>
+<b>Apothecary</b><br><sub>Light</sub><br><sub><code>sh -s apothecary</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-typewriter"><img src="docs/screenshots/typewriter-overview.jpg" alt="Typewriter theme" width="100%"></a><br>
-<b>Typewriter</b><br><sub>Light</sub><br><sub><code>sh -s typewriter</code></sub>
+<a href="themes/luci-theme-atomic"><img src="docs/screenshots/atomic-overview.jpg" alt="Atomic theme" width="100%"></a><br>
+<b>Atomic</b><br><sub>Light</sub><br><sub><code>sh -s atomic</code></sub>
 </td>
 <td width="25%" valign="top" align="center">
-<a href="themes/luci-theme-pcb"><img src="docs/screenshots/pcb-overview.jpg" alt="PCB theme" width="100%"></a><br>
-<b>PCB</b><br><sub>Dark</sub><br><sub><code>sh -s pcb</code></sub>
+<a href="themes/luci-theme-observatory"><img src="docs/screenshots/observatory-overview.jpg" alt="Observatory theme" width="100%"></a><br>
+<b>Observatory</b><br><sub>Dark</sub><br><sub><code>sh -s observatory</code></sub>
 </td>
 </tr>
 </table>
-<sub>Released 2026-11-20.</sub>
+<sub>Released 2026-11-27.</sub>
 <!-- GALLERY:END -->
 
 A new batch ships every Friday.
@@ -58,20 +58,24 @@ A new batch ships every Friday.
 <!-- LIST:START -->
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Seismograph](themes/luci-theme-seismograph) | Light | Paper chart recorder: ruled chart paper, a time scale down the edge, pen-arm headings and ink-trace meters | `seismograph` | [overview](docs/screenshots/seismograph-overview.jpg) &middot; [settings](docs/screenshots/seismograph-settings.jpg) |
+| [Apothecary](themes/luci-theme-apothecary) | Light | Pharmacy drawer labels: cream cartridge labels with double rules, small caps, amber glass vial meters on cork | `apothecary` | [overview](docs/screenshots/apothecary-overview.jpg) &middot; [settings](docs/screenshots/apothecary-settings.jpg) |
+| [Atomic](themes/luci-theme-atomic) | Light | Mid-century modern: boomerang-cut cards, starburst bullets, teal, mustard and walnut on warm cream | `atomic` | [overview](docs/screenshots/atomic-overview.jpg) &middot; [settings](docs/screenshots/atomic-settings.jpg) |
+| [Observatory](themes/luci-theme-observatory) | Dark | Star chart under the dome: deep indigo sky, brass dial rings, constellation line work and serif italics | `observatory` | [overview](docs/screenshots/observatory-overview.jpg) &middot; [settings](docs/screenshots/observatory-settings.jpg) |
 | [Radar](themes/luci-theme-radar) | Dark | A phosphor scope with a left range rail: green on black, range rings, corner brackets, blip labels and a sweep that stops for reduced motion. | `radar` | [overview](docs/screenshots/radar-overview.jpg) &middot; [settings](docs/screenshots/radar-settings.jpg) |
 | [Newsprint](themes/luci-theme-newsprint) | Light | A broadsheet front page: masthead with double rules, section tabs, headline serif, drop caps, column rules and halftone shading. | `newsprint` | [overview](docs/screenshots/newsprint-overview.jpg) &middot; [settings](docs/screenshots/newsprint-settings.jpg) |
 | [Typewriter](themes/luci-theme-typewriter) | Light | Cream stock in the carriage: monospace throughout, ink-ribbon black and red, bracketed keys, underscore fields and a blinking caret. | `typewriter` | [overview](docs/screenshots/typewriter-overview.jpg) &middot; [settings](docs/screenshots/typewriter-settings.jpg) |
 | [PCB](themes/luci-theme-pcb) | Dark | A solder-green board: copper-edged panels with corner vias, silkscreen reference labels, gold pad meters and a connector strip. | `pcb` | [overview](docs/screenshots/pcb-overview.jpg) &middot; [settings](docs/screenshots/pcb-settings.jpg) |
-| [Ledger](themes/luci-theme-ledger) | Light | Green-bar accounting paper: tractor-feed edges, ruled columns, typewriter type and rubber-stamp labels. | `ledger` | [overview](docs/screenshots/ledger-overview.jpg) &middot; [settings](docs/screenshots/ledger-settings.jpg) |
-| [Bauhaus](themes/luci-theme-bauhaus) | Light | Flat primaries on warm paper: heavy geometric type, a hard grid, black frames and circle, square and triangle markers. | `bauhaus` | [overview](docs/screenshots/bauhaus-overview.jpg) &middot; [settings](docs/screenshots/bauhaus-settings.jpg) |
-| [Cockpit](themes/luci-theme-cockpit) | Dark | Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and round dial meters. | `cockpit` | [overview](docs/screenshots/cockpit-overview.jpg) &middot; [settings](docs/screenshots/cockpit-settings.jpg) |
-| [Cassette](themes/luci-theme-cassette) | Dark | A hi-fi tape deck: brushed metal, a tape window on every panel, VU-scale meters with a needle and rocker-switch buttons. | `cassette` | [overview](docs/screenshots/cassette-overview.jpg) &middot; [settings](docs/screenshots/cassette-settings.jpg) |
 
 <details>
 <summary><b>Show older themes</b></summary>
 
 | Theme | Mode | Look | Install name | Preview |
 |---|---|---|---|---|
+| [Ledger](themes/luci-theme-ledger) | Light | Green-bar accounting paper: tractor-feed edges, ruled columns, typewriter type and rubber-stamp labels. | `ledger` | [overview](docs/screenshots/ledger-overview.jpg) &middot; [settings](docs/screenshots/ledger-settings.jpg) |
+| [Bauhaus](themes/luci-theme-bauhaus) | Light | Flat primaries on warm paper: heavy geometric type, a hard grid, black frames and circle, square and triangle markers. | `bauhaus` | [overview](docs/screenshots/bauhaus-overview.jpg) &middot; [settings](docs/screenshots/bauhaus-settings.jpg) |
+| [Cockpit](themes/luci-theme-cockpit) | Dark | Night-flight instrument panel: black glass, amber and green glow, bezel frames with screws, annunciator labels and round dial meters. | `cockpit` | [overview](docs/screenshots/cockpit-overview.jpg) &middot; [settings](docs/screenshots/cockpit-settings.jpg) |
+| [Cassette](themes/luci-theme-cassette) | Dark | A hi-fi tape deck: brushed metal, a tape window on every panel, VU-scale meters with a needle and rocker-switch buttons. | `cassette` | [overview](docs/screenshots/cassette-overview.jpg) &middot; [settings](docs/screenshots/cassette-settings.jpg) |
 | [Handheld](themes/luci-theme-handheld) | Light | Four-shade green LCD in a dark casing: chunky pixel-style text, dithered title bars, keycap buttons that sink. | `handheld` | [overview](docs/screenshots/handheld-overview.jpg) &middot; [settings](docs/screenshots/handheld-settings.jpg) |
 | [Nixie](themes/luci-theme-nixie) | Dark | Glowing orange digits on dark brass: engraved plates with rivets, glass-tube meters, a flickering tube clock. | `nixie` | [overview](docs/screenshots/nixie-overview.jpg) &middot; [settings](docs/screenshots/nixie-settings.jpg) |
 | [Subway](themes/luci-theme-subway) | Light | A transit map: the menu is a set of coloured lines with station dots, sections hang off a route line, meters end in a station. | `subway` | [overview](docs/screenshots/subway-overview.jpg) &middot; [settings](docs/screenshots/subway-settings.jpg) |

@@ -26,3 +26,7 @@ radar	Radar	Dark	A phosphor scope with a left range rail: green on black, range 
 newsprint	Newsprint	Light	A broadsheet front page: masthead with double rules, section tabs, headline serif, drop caps, column rules and halftone shading.	2026-11-20
 typewriter	Typewriter	Light	Cream stock in the carriage: monospace throughout, ink-ribbon black and red, bracketed keys, underscore fields and a blinking caret.	2026-11-20
 pcb	PCB	Dark	A solder-green board: copper-edged panels with corner vias, silkscreen reference labels, gold pad meters and a connector strip.	2026-11-20
+seismograph	Seismograph	Light	Paper chart recorder: ruled chart paper, a time scale down the edge, pen-arm headings and ink-trace meters	2026-11-27
+apothecary	Apothecary	Light	Pharmacy drawer labels: cream cartridge labels with double rules, small caps, amber glass vial meters on cork	2026-11-27
+atomic	Atomic	Light	Mid-century modern: boomerang-cut cards, starburst bullets, teal, mustard and walnut on warm cream	2026-11-27
+observatory	Observatory	Dark	Star chart under the dome: deep indigo sky, brass dial rings, constellation line work and serif italics	2026-11-27

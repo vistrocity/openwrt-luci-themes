@@ -17,11 +17,7 @@ Empty. The next batch comes from the Proposed ideas below once approved.
 
 | # | Slug | Idea |
 |---|------|------|
-| 9 | seismograph | Paper chart recorder: ruled chart grid, ink-pen traces for meters, pen-arm accents |
-| 10 | apothecary | Pharmacy drawer labels: cream cartridge labels, ornate small caps, amber glass and cork tones |
-| 11 | atomic | Mid-century modern: boomerang shapes, starbursts, teal/mustard/walnut, rounded geometric sans |
-| 12 | observatory | Star-chart: deep indigo, constellation line work, brass dial rings, serif italics |
-| 13 | blueprint | Architect's blueprint: cyan paper, white drafting lines, dimension arrows, title-block footer |
+| 13 | greenhouse | Victorian glasshouse: white iron frame mullions, condensation-green glass panes, terracotta pot accents, fern line art |
 | 14 | terrazzo | Speckled terrazzo floor: pastel chips, rounded slabs, chunky soft shadows |
 | 15 | lighthouse | Coastal navy and white stripes, rope borders, brass lamp accents, lifebuoy-style badges |
 | 16 | botanical | Herbarium plates: pressed-leaf line art, sage and ivory, italic Latin-style labels |
@@ -42,4 +38,5 @@ Possible first four: calm light, calm dark, high contrast, large text. Decide af
 Batch 1 (Fri 30 Oct 2026, tag `v2026.10.30`): handheld, nixie, subway, chalkboard.
 Batch 2 (Fri 6 Nov 2026, tag `v2026.11.06`): ledger, bauhaus, cockpit, cassette.
 Batch 3 (Fri 20 Nov 2026, tag `v2026.11.20`): radar (first sidebar layout), newsprint, typewriter, pcb.
+Batch 4 (Fri 27 Nov 2026): seismograph, apothecary, atomic, observatory.
 Launch (Tue 27 Oct): the original 16.
